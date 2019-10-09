@@ -1,6 +1,33 @@
 
 <?
-
+// require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
+//
+// global $USER;
+// use Bitrix\Main,
+//     Bitrix\Main\Loader,
+//     Bitrix\Main\Config\Option,
+//     Bitrix\Sale,
+//     Bitrix\Sale\Order,
+//     Bitrix\Main\Application,
+//     Bitrix\Sale\DiscountCouponsManager;
+// $basket = Sale\Basket::loadItemsForFUser(Sale\Fuser::getId(), Bitrix\Main\Context::getCurrent()->getSite());
+//
+//
+// if ($item = $basket->getExistsItem('catalog', 49866)) {
+// 		$item->setField('QUANTITY', $item->getQuantity() + $quantity);
+// } else {
+// 		$item = $basket->createItem('catalog', 49866);
+// 		$item->setFields(array(
+// 				'QUANTITY' => 1,
+// 				'CURRENCY' => \Bitrix\Currency\CurrencyManager::getBaseCurrency(),
+// 				'LID' => \Bitrix\Main\Context::getCurrent()->getSite(),
+// 				'PRODUCT_PROVIDER_CLASS' => 'CCatalogProductProvider',
+// 		));
+// }
+// $basket->save();
+// echo "<pre>";
+// print_r($item);
+// echo "</pre>";
 ?>
 
 
@@ -655,7 +682,18 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 								</div>
 
 							</div>
-							<button id="sale-on-ckick" type="button" name="button">sale-on-ckick</button>
+							<div class="btn-block-sale">
+								<button id="sale-on-ckick" type="button" name="button">Купить в 1 клик</button>
+
+
+	                    <a class="btn-cart-sale btn btn-default product-item-detail-buy-button" id="<?=$itemIds['ADD_BASKET_LINK']?>" href="javascript:void(0);">
+	                      <span>В корзину</span>
+	                    </a>
+							</div>
+
+
+
+
 							<?
 							if ($arParams['SHOW_OLD_PRICE'] === 'Y')
 							{
@@ -1139,6 +1177,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 			*/?>
 			<div class="col-sm-8 col-md-9">
 			</div>
+
 			<div class="col-sm-4 col-md-3">
 				<div>
 					<?

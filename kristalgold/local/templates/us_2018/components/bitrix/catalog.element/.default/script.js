@@ -3823,15 +3823,19 @@
 
 $(function(){
 	$('#sale-on-ckick').click(function(){
-		$.post("/local/php_interface/bitrixOneClickOrder.php",
-              {
-                name: 'Имя',
-								phone : 'Телефон',
-								oneProduct : 'Y',
-							  productId : 49119
-              },
-              function(data){
-                alert(data);
-              });
+	   showPopup();
 	});
+
+
+
+
+	$('#button-cart').click(function(){
+	 	
+   	});
+
+
+
+
+
+
 });
