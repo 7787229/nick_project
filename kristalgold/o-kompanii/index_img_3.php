@@ -1,0 +1,1 @@
+<img src="/local/templates/ustemplate/images/Техподдержка.png" title="Техподдержка" alt="Техподдержка">

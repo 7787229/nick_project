@@ -1,0 +1,31 @@
+<?
+$MESS["Main banner"] = "Основной баннер";
+$MESS["Type of main banner"] = "Тип основного баннера";
+$MESS["video"] = "Видео";
+$MESS["slider"] = "Слайдер";
+$MESS["Main slider"] = "Основной слайдер";
+$MESS["Main video"] = "Основное видео";
+$MESS["What's New Block"] = "Блок НОВИНКИ, свойство NEWPRODUCT";
+$MESS["Type of information block"] = "Тип инфоблока";
+$MESS["Information block"] = "Инфоблок";
+$MESS["Height slider (px)"] = "Высота слайдера (px)";
+$MESS["Bestseller Block"] = "Блок БЕСТСЕЛЛЕРЫ, свойство BESTSELLER ";
+$MESS["Sale Block"] = "Блок РАСПРОДАЖИ, свойство DISCOUNT ";
+$MESS["The field with the image"] = "Поле с изображением";
+$MESS["The field with the title"] = "Поле с заголовком";
+$MESS["The field with the URL"] = "Поле со ссылкой";
+$MESS["Title"] = "Заголовок";
+$MESS["Field name"] = "Поле";
+$MESS["Field value"] = "Значение поля";
+$MESS["Type of price"] = "Тип цены";
+$MESS["Do not show the price"] = "Не показывать цену";
+$MESS["SKU field"] = "Поле с артикулом";
+$MESS["Show this block"] = "Показывать блок";
+$MESS["General settings"] = "Общие настройки";
+
+$MESS["Path to tmp-image"] = "Путь к картинке-заглушке";
+$MESS["Video from youtube"] = "Видео с YouTube";
+$MESS["Path to WEBM"] = "Путь к видео (.webm)";
+$MESS["Path to MP4"] = "Путь к видео (.mp4)";
+$MESS["Path to OGG"] = "Путь к видео (.ogg)";
+$MESS["Youtube video id"] = "ID видео";

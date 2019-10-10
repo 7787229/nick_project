@@ -1,0 +1,67 @@
+	#popupToOrderInOneClick textarea{
+		resize: none;
+		height: 100px
+	}
+	#popupToOrderInOneClick input, #popupToOrderInOneClick textarea{
+		margin: 3px!important;
+		width:100%;
+	    padding: 6px;
+	}
+	#popupToOrderInOneClick input[type='checkbox']{
+		width: auto;
+		height: auto;
+		vertical-align: top;
+	}
+
+.orderIsAdded{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+	.orderIsAdded h4{
+		text-align:center;
+	}
+
+.modal-body form #submitOrderInOneClick{
+	border: none;
+}
+
+label {
+	max-width: 90%!important;
+}
+#popupToOrderInOneClick label, #popupToOrderInOneClick label a{
+	font-size:11px;
+	font-weight:500;
+	vertical-align: top;
+}
+#popupToOrderInOneClick label a{
+	color:#920000;
+}
+.modal-body form #submitOrderInOneClick[type="button"]{
+	opacity: 0.5;
+}
+
+.modal-body .error-mess {
+	display: block;
+    width: 100%;
+    max-height: 50px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+#popupToOrderInOneClick .nullValue{
+	border-color: red!important;
+    border-width: 1px;
+}

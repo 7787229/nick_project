@@ -1,0 +1,59 @@
+#try_phone{
+	font-size: 14px;
+    text-align: left;
+}
+
+ul.errortext li {
+	color: #FF4333;
+    text-align: left;
+    font-size: 14px;
+	list-style-type: disc!important;
+}
+ul.errortext {
+	-webkit-padding-start: 10px;
+	
+}
+
+#registration__form input[type='checkbox']{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+	#registration__form input[type='checkbox'] + label{
+		display: inline;
+	}
+	
+#registration__form .modal-dialog {
+    width: 490px;
+}
+	#registration__form .modal-body{
+		max-width: 490px;
+	}	
+		#registration__form .modal-body table{
+			width: 100%;
+		}
+		#registration__form .modal-body table input{
+			float: right;
+			max-width: 300px;
+		}
+		
+#registration__form .hide{
+	display: none;
+}		
+
+#registration__form .bad_value{
+	border-color: red;
+}
+#registration__form h3{
+	margin-top: 5px;
+    margin-bottom: 15px;
+}
+	#registration__form .input_row{
+		position: relative;
+	}
+	#registration__form .input_row #show_hide_passwd{
+		position: absolute;
+		right: 5px;
+		top: 8px;
+	}

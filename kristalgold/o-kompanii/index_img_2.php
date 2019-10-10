@@ -1,0 +1,1 @@
+<img src="/local/templates/ustemplate/images/График.png" title="График" alt="График"><br>

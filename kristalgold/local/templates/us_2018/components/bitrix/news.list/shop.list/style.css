@@ -1,0 +1,27 @@
+.list-stores a, .list-stores a:active, .list-stores a:focus {
+    color: #333!important;
+}
+.list-stores a:hover{
+	text-decoration: none;
+	color: #000!important;
+}
+.list-stores {
+    counter-reset: headings 0;
+}
+.store_block{
+	display:block;
+	padding-left: 15px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+}
+.store_block:before{
+	counter-increment: headings 1;
+	content: counter(headings, decimal) ". ";
+	
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.map{
+	margin-top:20px
+}

@@ -1,0 +1,163 @@
+#topmenucustom {
+    
+}
+#topmenucustom .menu{
+     /*min-width: 1024px;*/ 
+    background: #FFF;
+    display: table;
+    margin: 0 auto;
+}
+
+#topmenucustom .menu ul.main_menu{
+    display: table;
+    padding-left: 0;
+    margin: 0 auto;
+    /*width: 936px;*/
+}
+#topmenucustom .menu ul.main_menu > li{
+    display: table-cell;
+
+    position: relative;
+
+    min-width: 100px;
+
+    list-style: none;
+
+    vertical-align: top;
+}
+#topmenucustom .menu ul.main_menu > li > a{
+    display: block;
+
+    position: relative;
+
+    height: 52px;
+    padding: 0 15px;
+
+    color: #000;
+    font: 14px/52px Liberation;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-left: 1px solid #CCC;
+
+    transition: background-color .2s linear;
+}
+
+#topmenucustom .menu ul.main_menu > li > a:hover,
+#topmenucustom .menu ul.main_menu > li > a.active{
+    /*background-color: #7860a9;*/
+}
+
+
+#topmenucustom .menu ul.main_menu > li > a.new{
+    border-left: 1px solid #CCC;
+    /*background: #412e70;*/
+}
+#topmenucustom .menu ul.main_menu > li > a.new:before{
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 36px;
+    height: 37px;
+
+    background: url(../images/ic_menu_new.png) 0 0 no-repeat;
+
+    content: '';
+}
+#topmenucustom .menu ul.main_menu > li > a.new:hover{
+    /*background-color: #533c85;*/
+}
+#topmenucustom .menu ul.main_menu > li > a.new:active{
+    /*background-color: #4b367c;*/
+}
+
+
+#topmenucustom .menu ul.main_menu > li > a.sale{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    /*background: #7255a7;*/
+}
+#topmenucustom .menu ul.main_menu > li > a.sale:before{
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 36px;
+    height: 37px;
+
+    background: url(../images/ic_menu_sale.png) 0 0 no-repeat;
+
+    content: '';
+}
+#topmenucustom .menu ul.main_menu > li > a.sale:hover{
+    /*background-color: #664b9a;*/
+}
+#topmenucustom .menu ul.main_menu > li > a.sale:active{
+    /*background-color: #6d51a2;*/
+}
+
+
+#topmenucustom .menu .sub_menu{
+    display: none;
+
+    position: absolute;
+    left: 0;
+    z-index: 999;
+
+    padding: 25px 20px;
+
+    /*background: #7860a9;*/
+}
+#topmenucustom .menu ul.main_menu > li:hover .sub_menu{
+    display: block;
+    border: 1px solid #ccc;
+    background: #FFF;
+}
+
+#topmenucustom .menu .sub_menu .title{
+    margin-bottom: 20px;
+
+    color: #000;
+    font: 700 14px/14px Liberation;
+}
+
+
+#topmenucustom .menu .sub_menu .col{
+    max-width: 145px;
+}
+#topmenucustom .menu .sub_menu .col + .col{
+    margin-left: 40px;
+}
+
+#topmenucustom .menu .sub_menu li{
+    list-style: none;
+
+    font: 300 12px SFUIDisplay;
+}
+#topmenucustom .menu .sub_menu li + li{
+    margin-top: 12px;
+}
+#topmenucustom .menu .sub_menu li a{
+    color: #000;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+#topmenucustom .menu .sub_menu li a:hover{
+    /*color: #d7c8ad;*/
+	text-decoration: underline;
+}
+.left {
+    float: left;
+}
+.clear {
+    clear: both;
+}

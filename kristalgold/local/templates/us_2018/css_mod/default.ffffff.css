@@ -1,0 +1,99 @@
+.error {margin:30px 0px}
+.error {text-align:center;}
+.error p{line-height:22px;font-size: 14px; color: #000; margin: 0px;padding:0px 20%;}
+.error .error-text{text-transform:uppercase;color:#F46C60;margin-bottom:30px;}
+.error div{margin:20px 0px;}
+.error a{color:#F46C60;}
+@media only screen and (max-width:400px){
+	.error p{padding:0px 5%;}
+}
+
+
+
+.sale-order-detail-about-order-inner-container-repeat-button {
+    background: #920000;
+}
+
+.sale-order-detail-payment-options-methods-button-element, .sale-order-detail-payment-options-methods-button-element-new-window {
+    background: #920000;
+}
+
+.sale-order-detail-general-head {
+    background: #920000;
+}
+
+.sale-order-detail-general {
+    border: 0;
+}
+
+.sale-order-detail-about-order-inner-container-repeat-button:hover, 
+.sale-order-detail-payment-options-methods-button-element.active-button:hover, 
+.sale-order-detail-payment-options-methods-button-element-new-window:hover {
+    background: #b55959;
+}
+
+.sale-order-list-button {
+    background: #920000;
+}
+
+.sale-order-list-title-container {
+    background: #e8e8e8;
+}
+
+.sale-order-list-shipment-button, .sale-order-list-repeat-link, 
+.sale-order-list-cancel-link, .sale-order-list-about-link, 
+.sale-order-list-change-payment {
+    color: #920000;
+}
+
+.sale-order-list-button:hover {
+    background: #ad2525;
+}
+
+.sale-paysystem-wrapper {
+    border: 1px solid #eaeaea;
+}
+
+.sale-paysystem-yandex-button-item {
+    background: #920000;
+}
+
+.sale-order-link, .sale-order-history-link {
+    color: #920000;
+}
+
+.alert-success {
+    color: #1f4a0f!important;
+    background-color: #f7f7f7!important;
+    border-color: #616161!important;
+}
+
+.bx-soa-section.bx-step-completed {
+    border: 1px solid #f7f7f7!important;
+}
+
+.bx-soa-section.bx-step-completed .bx-soa-section-title-count {
+    background: #ffffff!important;
+    border-color: #adadad!important;
+}
+
+.bx-soa-section.bx-step-completed .bx-soa-section-title-count:after {
+    color: #000!important;
+}
+
+.bx-soa-section.bx-selected {
+    border: 1px solid #cccccc!important;
+}
+
+.bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container {
+    border-color: #909090!important;
+}
+
+.bx-soa-pp-company-graf-container {
+    border: 1px solid #ececec!important;
+}
+
+.main-user-consent-request-popup-button-acc,.main-user-consent-request-popup-button-acc:hover {
+	background: #7b0606!important;
+	color: #ffffff!important;
+}

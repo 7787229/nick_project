@@ -1,0 +1,77 @@
+body {
+    color: #FFF;
+    background-color: #1D1D1D;
+}
+
+.bx_price {
+    color: #34445F!important;
+}
+
+a, span, div {
+    color: #ebebeb!important;
+}
+
+
+.modified p label {
+    background-color: #F46C60!important;
+}
+
+
+.bx_catalog_list_home .bx_catalog_item_title a {
+    color: #444444!important;
+}
+
+.news-favorite.active, .news-favorite.active:hover i {
+    color: #f46c60!important;
+}
+
+.title-admin-panels-block {
+    color: #333333;
+}
+
+footer .container {
+    background: #20242D!important;
+}
+
+.title-news span, .bx_price span {
+    color:#222222!important;
+}
+
+.item_kart .fa-heart-o {
+    color:#222222!important;
+}
+
+
+.title {
+    border-bottom: 1px solid #E8E8E8!important;
+}
+
+#banner .item_kart a {
+    color:#f7938a!important;
+}
+
+header {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 0;
+    top:0;
+    background: #822A2A;
+    z-index: 100000;
+}
+
+.bx-no-touch .bx_catalog_list_home .bx_catalog_item:hover .bx_catalog_item_container {
+    top: -20px;
+    left: -20px;
+    right: -20px;
+}
+
+
+.vhod span.basket a.count, .vhod span.favorites a.count {
+    color: #000000!important;
+    background: #FFFFFF!important;
+}
+
+#bx-panel.bx-panel-fixed {
+    margin-top: 100px!important;
+}

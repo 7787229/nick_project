@@ -1,0 +1,1 @@
+©&nbsp;2017 <a href="https://www.uvelirsoft.ru/site/">ООО "НПП ЮвелирСофт"</a>

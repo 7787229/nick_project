@@ -1,0 +1,1 @@
+<img src="/local/templates/ustemplate/images/Комплексный.png" title="Комплексный" alt="Комплексный"><br>

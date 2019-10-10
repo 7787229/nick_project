@@ -1,0 +1,100 @@
+body{
+	background-color:#ffebe4
+}
+.navbar-default,footer .container,
+.error_title, .error_404 p span a,.action-carousel-baner .action-title,.fa-search:hover{
+	background:#1d2345;
+}
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover,
+footer .container,footer ul>li a,footer .copiryte,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color:#fff
+}
+#banner .owl-prev, #banner .owl-next{
+	    background: url(/local/templates/ustemplate/images/gamma1/nav_banner1.png);
+}
+#banner .owl-prev:hover, #banner .owl-next:hover, #banner .owl-prev:active, #banner .owl-next:active {
+    background: url(/local/templates/ustemplate/images/gamma1/nav_banner_active1.png);
+}
+#banner .owl-next, #banner .owl-next:active, #banner .owl-next, #banner .owl-next:hover {
+    background-position: -27px 0px;
+}
+.owl-prev, .owl-next {
+	border-color: #a2a2a2;
+}
+.owl-prev:hover, .owl-next:hover {
+	border-color: #218380;
+}
+.owl-prev:active, .owl-next:active {
+	border-color: #5f2a4f;
+}
+button{
+	background-color:#5f2a4f
+}
+.yandex {
+   background: url(/local/templates/ustemplate/images/gamma1/yandex1.png);
+}
+.oformlenie-money span.yandex{
+	background: url(/local/templates/ustemplate/images/yandex.png);
+	height:70px;
+	background-size: 100% auto;
+	background-repeat:no-repeat
+}
+.vhod span.favorites a i{
+	opacity:1;
+	color:#5f2a4f
+}
+	.vhod span.favorites a i:hover{
+		opacity:1;
+		color:#1d2345
+	}
+	.news-favorite i:hover{
+		color: #757575;
+	}
+	.news-favorite.active, .news-favorite.active:hover i,.nav-catalog .pagination>li.active>a:hover, .nav-catalog .pagination>li.disabled>a:hover {
+    color: #218380;
+	}
+.vhod span.basket {
+	background-image: url(/local/templates/ustemplate/images/gamma1/basket1.png);
+}
+	.vhod span.basket:hover {
+		background-image: url(/local/templates/ustemplate/images/gamma1/basket_hover1.png);
+	}
+
+.nav-catalog .pagination>li.active>a, .nav-catalog .pagination>li.disabled>a,
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus{
+	background:transparent
+}
+.news-favorite i,.nav-catalog .pagination li:first-child a, .pagination li:last-child a, .nav-catalog .pagination li:first-child a, .pagination li:last-child a,
+input[type=search].open+span.search .fa-search{
+	color:#c1c1c1;
+}
+.nav-catalog .pagination>li.active>a, .nav-catalog .pagination>li.active>a,.sort a:hover, .sort a:active, a.active,
+.basket-page .bottom-basket .pagination>li.active>a, .liked-page .bottom-basket .pagination>li.active>a, 
+.basket-page .bottom-basket .pagination>li:first-child:hover:not(.disabled) a, 
+.basket-page .bottom-basket .pagination>li:last-child:hover:not(.disabled) a, 
+.liked-page .bottom-basket .pagination>li:first-child:hover:not(.disabled) a, 
+.liked-page .bottom-basket .pagination>li:last-child:hover:not(.disabled) a,
+.nav-catalog .pagination>li.active>a:active, .nav-catalog .pagination>li.disabled>a:active
+{
+	color:#5f2a4f
+}
+.vhod span.basket a.count, .vhod span.favorites a.count{
+	background:#fff;
+	color:#000
+}
+.bx_stars_progres{
+	background:#218380;
+}
+.order_post input[type="radio"]:checked+div:before,.bx-filter-input-checkbox input[type="checkbox"]:checked + span:before,
+.modified p input[type="checkbox"]:checked + label,.modified p label:hover{
+	background-color:#218380;
+	border:1px solid #218380
+}
+.vhod span.search{
+	opacity:1
+	}
+.fa-search{
+	color:#5f2a4f;
+	opacity:1;
+	}
+.modified p label{background:#fff}

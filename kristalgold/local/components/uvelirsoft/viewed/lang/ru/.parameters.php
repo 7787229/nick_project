@@ -1,0 +1,22 @@
+<?
+$MESS["Main slider"] = "Основной слайдер";
+$MESS["What's New Block"] = "Блок НОВИНКИ, свойство NEWPRODUCT";
+$MESS["Type of information block"] = "Тип инфоблока";
+$MESS["Information block"] = "Инфоблок";
+$MESS["Height slider (px)"] = "Высота слайдера (px)";
+$MESS["Bestseller Block"] = "Блок БЕСТСЕЛЛЕРЫ, свойство BESTSELLER ";
+$MESS["Sale Block"] = "Блок РАСПРОДАЖИ, свойство DISCOUNT ";
+$MESS["The field with the image"] = "Поле с изображением";
+$MESS["The field with the title"] = "Поле с заголовком";
+$MESS["The field with the URL"] = "Поле со ссылкой";
+$MESS["Title"] = "Заголовок";
+$MESS["Field name"] = "Поле";
+$MESS["Field value"] = "Значение поля";
+$MESS["Type of price"] = "Тип цены";
+$MESS["Do not show the price"] = "Не показывать цену";
+$MESS["SKU field"] = "Поле с артикулом";
+$MESS["Show this block"] = "Показывать блок";
+$MESS["General settings"] = "Общие настройки";
+$MESS["Banners Block"] = "Блок баннеров";
+$MESS["Banners height"] = "Высота баннеров (px)";
+$MESS["Sort"] = "Сортировка";

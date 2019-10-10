@@ -1,0 +1,29 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+#blog-photo {
+    float: left;
+    margin-right: 2em;
+}
+#blog-description {
+    padding: 2em 3em 1em 1em;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1em;
+}
+div.kristall-blog {
+    background: white;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 250px;
+    margin: 1em 0 2em 0;
+}

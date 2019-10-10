@@ -1,0 +1,1 @@
+<img src="/local/templates/ustemplate/images/Профессионалы.png" title="Профессионалы" alt="Профессионалы">

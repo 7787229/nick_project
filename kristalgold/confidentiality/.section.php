@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Конфиденциальность";
+$arDirProperties = Array(
+
+);
+?>

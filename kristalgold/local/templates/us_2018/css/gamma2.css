@@ -1,0 +1,126 @@
+body{
+	background-color:#fff;
+}
+.navbar-default, footer .container{
+	background:#218380;
+}
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover{
+	color:#fff
+}
+#banner .owl-prev, #banner .owl-next{
+	background: url(/local/templates/ustemplate/images/gamma1/nav_banner1.png);
+}
+#banner .owl-prev:hover, #banner .owl-next:hover, #banner .owl-prev:active, #banner .owl-next:active {
+  background: url(/local/templates/ustemplate/images/gamma1/nav_banner_active1.png);
+}
+#banner .owl-next, #banner .owl-next:active, #banner .owl-next, #banner .owl-next:hover {
+  background-position: -27px 0px;
+}
+.owl-prev, .owl-next {
+	border-color: #c1c1c1;
+}
+.owl-prev:hover, .owl-next:hover {
+	border-color: #218380;
+}
+.owl-prev:active, .owl-next:active {
+	border-color: #8f2d56;
+}
+button{
+	background-color:#5f2a4f;
+}
+.buttons{
+  background-color:#ffbc42;
+}
+footer .container,footer ul>li a,footer .copiryte{
+	color:#fff;
+}
+
+
+.nav-catalog .pagination>li.active>a, .nav-catalog .pagination>li.disabled>a{
+	background:transparent
+}
+.nav-catalog .pagination li:first-child a, .pagination li:last-child a, .nav-catalog .pagination li:first-child a, .pagination li:last-child a{
+	color:#c1c1c1;
+}
+.nav-catalog .pagination>li.active>a:hover, .nav-catalog .pagination>li.disabled>a:hover{
+	color:#218380;
+}
+.nav-catalog .pagination>li.active>a:active, .nav-catalog .pagination>li.disabled>a:active{
+	color:#8f2d56;
+}
+.owl-carousel .owl-item{border:1px solid #218380;}
+.modified p label{
+  background-color: #218380;
+}
+.news-favorite{border-color:#218380;}
+
+.nav-catalog .pagination>li.active>a, .nav-catalog .pagination>li.active>a,.sort a:hover, .sort a:active, a.active,
+.basket-page .bottom-basket .pagination>li.active>a, .liked-page .bottom-basket .pagination>li.active>a, 
+.basket-page .bottom-basket .pagination>li:first-child:hover:not(.disabled) a, 
+.basket-page .bottom-basket .pagination>li:last-child:hover:not(.disabled) a, 
+.liked-page .bottom-basket .pagination>li:first-child:hover:not(.disabled) a, 
+.liked-page .bottom-basket .pagination>li:last-child:hover:not(.disabled) a
+{
+	color:#d81159;
+}
+#news .owl-item, #best .owl-item, #sale .owl-item{border: 1px solid #218380;}
+#news .owl-item:hover, #best .owl-item:hover, #sale .owl-item:hover{
+  box-shadow: 0px 0px 5px 0px;
+  -webkit-shadow: 0px 0px 5px 0px;
+  border: 1px solid #218380;
+  -moz-box-shadow: 0px 0px 5px 0px;
+  -ms-box-shadow: 0px 0px 5px 0px;
+  -o-box-shadow: 0px 0px 5px 0px;
+}
+.bx_stars_progres{background-color:#ffbc42;}
+.bx-filter-input-checkbox span:before{
+  border: 1px solid #218380;
+}
+.bx-filter-input-checkbox input[type="checkbox"]:checked + span:before{
+  background-color: #218380;
+  border: 1px solid #218380;
+  content: "\E013";
+}
+bx-filter-select-container{
+  border: 1px solid #218380;
+}
+.bx-filter .bx-ui-slider-handle.left, .bx-filter .bx-ui-slider-handle.right{
+  border-color:#218380;
+}
+.bx-filter .bx-filter-input-container input{
+  border-color:#218380;
+}
+.bx-filter.bx-uvelirsoft .bx-filter-input-container input:focus {
+    border-color: #ffbc42;
+}
+a:hover{border-color:#ffbc42;}
+.vhod span.search i{color:#c1c1c1;}
+.vhod span.search:hover i{color:#757575;}
+.vhod span.search:active i{color:#d81159;}
+input[type=search].open+span.search i{color:#d81159;}
+.vhod span.favorites a i{opacity:1;	color:#c1c1c1;}
+.vhod span.favorites a i:hover{opacity:1;	color:#757575;}
+.vhod span.favorites a i:hover{opacity:1;	color:#757575;}
+.news-favorite i{color: #c1c1c1;}
+.news-favorite i:hover{color: #d81159;}
+.news-favorite.active, .news-favorite.active:hover i {color: #218380;}
+.vhod span.basket a.count, .vhod span.favorites a.count{background-color: #ffbc42;}
+.vhod span.basket {background-image: url(/local/templates/ustemplate/images/gamma2/basket1.png);}
+.vhod span.basket:hover {
+  background-image: url(/local/templates/ustemplate/images/gamma2/basket_hover1.png);
+  opacity:1;
+}
+.price.sale-new, .new-price{
+  color:#ffbc42 !important;
+}
+.vhod span.favorites a i:active{
+  color:#d81159;
+}
+.socials a i{
+  color:#c1c1c1 !important;
+}
+.socials a i:hover{
+  color:#BABABA !important;
+}
+
+#banner.owl-carousel .owl-item{border:0px;}

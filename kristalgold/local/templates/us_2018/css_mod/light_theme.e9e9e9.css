@@ -1,0 +1,30 @@
+
+body {
+	background-color: #EFF6FF;
+}
+
+#banner {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#news .owl-item, #best .owl-item, #sale .owl-item, #recom .owl-item {
+    border: 0!important;
+}
+
+.title {
+    border-bottom: 1px solid #E8E8E8!important;
+}
+
+.vhod span.basket a.count, .vhod span.favorites a.count {
+    background: #FFAE00!important;
+}
+
+
+polygon {
+    fill: #FFAE00;
+}
+
+.bx_catalog_list_home.bx_uvelirsoft .bx_bt_button {
+    background: #FFAE00!important;
+}
+

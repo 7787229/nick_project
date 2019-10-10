@@ -1,0 +1,55 @@
+#try_login_phone{
+	font-size: 14px;
+    text-align: left;
+}
+
+#authorized__form .hide{
+	display: none;
+}
+#authorized__form .bad_value{
+	border-color: red;
+}
+
+.auth-table td {
+    padding: 4px;
+}
+
+.auth-table td input[type='text'], .auth-table td input[type='password']{
+    width:100%!important;
+    padding-left: 10px;
+}
+
+.auth-table td input[type='checkbox']{
+    width:20px;
+    height:20px;
+    margin: 0;
+}
+
+div.bx-system-auth-form span.bx-auth-secure {background-color:#FFFAE3; border:1px solid #DEDBC8; padding:2px; display:inline-block; vertical-align:bottom; margin-top:-1px;}
+div.bx-system-auth-form div.bx-auth-secure-icon {background-image:url(images/sec.png); background-repeat:no-repeat; background-position:center; width:19px; height:18px;}
+div.bx-system-auth-form div.bx-auth-secure-unlock {background-image:url(images/sec-unlocked.png);}
+
+.social_services_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.captcha>td {
+  display: block;
+	text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+.captcha img {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.captcha>td input{
+	border: 2px solid #000 !important;
+}

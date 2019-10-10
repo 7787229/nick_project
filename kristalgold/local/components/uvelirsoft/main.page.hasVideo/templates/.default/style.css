@@ -1,0 +1,63 @@
+
+.container a {color:#555555;}
+
+.column {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.banner_video{
+    position:relative;
+    margin-bottom: 30px;
+}
+
+.big-background {
+    z-index:550;
+    text-align:center;
+    height:500px;
+    min-height:100%;
+    position:relative;
+    overflow:hidden;
+    background-size: cover!important;
+}
+
+.mb_YTVPBar {
+    display:none!important;
+}
+
+
+video{
+    width: 100%
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+#banner .item .inner-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+    border:0px;
+    border-radius: 0px;
+}
+#banner .owl-dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 7px;
+    border: 0;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+#banner .owl-dot.active{
+    background-color: #aeaeae;
+}
+#banner .owl-dot span{
+    display: none !important;
+}

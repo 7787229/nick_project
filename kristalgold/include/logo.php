@@ -1,0 +1,2 @@
+<img width="308" alt="kristallgold-logo" src="/upload/medialibrary/e4c/logo-_2_.png" height="57" title="kristallgold-logo" class="desctop"> 
+<img width="308" alt="kristallgold-logo" src="/upload/medialibrary/e4c/logo-_2_.png" height="57" title="kristallgold-logo" class="mobile">
