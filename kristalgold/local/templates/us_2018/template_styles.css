@@ -2004,7 +2004,7 @@ body .desctop_hide{
 /*changed*/
 button#sale-on-ckick, .btn-cart-sale {
     height: 50px;
-    background: #519a9a !important;
+    background: #459e80 !important;
     border: none;
     border-radius: 5px;
     margin-top: 20px !important;
@@ -2017,4 +2017,5 @@ button#sale-on-ckick, .btn-cart-sale {
   display: flex;
 
 }
+
 /*changed*/

@@ -177,6 +177,18 @@ if(empty($arResult['PROPS_TO_POPUP']['PICTURE'])){
 	function hidePopup(){
 		$("#popupToOrderInOneClick_background").hide();
 	}
+
+	function uploadPopup(offer_razm,offer_vstavka,offer_cena){
+		
+
+		$('#razmer').val(offer_razm);
+		$('#vstavka').val(offer_vstavka);
+		$('#tovar_price').val(offer_cena);
+
+		setTimeout(function(){
+			showPopup();
+		}, 500);
+	}
 	</script>
 <?}?>
 

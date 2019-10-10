@@ -1,34 +1,5 @@
 
-<?
-// require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
-//
-// global $USER;
-// use Bitrix\Main,
-//     Bitrix\Main\Loader,
-//     Bitrix\Main\Config\Option,
-//     Bitrix\Sale,
-//     Bitrix\Sale\Order,
-//     Bitrix\Main\Application,
-//     Bitrix\Sale\DiscountCouponsManager;
-// $basket = Sale\Basket::loadItemsForFUser(Sale\Fuser::getId(), Bitrix\Main\Context::getCurrent()->getSite());
-//
-//
-// if ($item = $basket->getExistsItem('catalog', 49866)) {
-// 		$item->setField('QUANTITY', $item->getQuantity() + $quantity);
-// } else {
-// 		$item = $basket->createItem('catalog', 49866);
-// 		$item->setFields(array(
-// 				'QUANTITY' => 1,
-// 				'CURRENCY' => \Bitrix\Currency\CurrencyManager::getBaseCurrency(),
-// 				'LID' => \Bitrix\Main\Context::getCurrent()->getSite(),
-// 				'PRODUCT_PROVIDER_CLASS' => 'CCatalogProductProvider',
-// 		));
-// }
-// $basket->save();
-// echo "<pre>";
-// print_r($item);
-// echo "</pre>";
-?>
+
 
 
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
