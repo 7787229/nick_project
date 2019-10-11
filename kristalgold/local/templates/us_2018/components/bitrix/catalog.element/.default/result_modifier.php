@@ -98,7 +98,7 @@ $arParams = $component->applyTemplateModifications();
         if(!empty($arOffer[strtoupper($arParams['OFFERS_SORT_FIELD2'])]))
             $sort['field2'][$arOffer['ID']] = $arOffer[strtoupper($arParams['OFFERS_SORT_FIELD2'])];
     }
-    // printvar('',$offerTreeProps);    
+    // printvar('',$offerTreeProps);
     // printvar('', $sort);
 
     $sort_order1 = strtoupper($arParams['OFFERS_SORT_ORDER']) == 'ASC' ? SORT_ASC : SORT_DESC;
@@ -127,7 +127,25 @@ $arParams = $component->applyTemplateModifications();
     // printvar($sort_order1, $js_sort);
     //printvar('', $arResult['ITEM_PRICES']);
     array_multisort($js_sort['field1'], $sort_order1, SORT_NUMERIC, $js_sort['field2'], $sort_order2, SORT_NUMERIC, $arResult['JS_OFFERS']);
-    $arResult['OFFERS_SELECTED'] = 0;
+
+
+
+
+    $min_price=999999999999;
+    $of_razm=0;
+    $arr_razm=array();
+    foreach ($arResult['OFFERS'] as $key => $value) {
+      $arr_razm[]=$value['PROPERTIES']['RAZMER']['VALUE'];
+      if($value['MIN_PRICE']['VALUE']<$min_price){
+        $min_price=$value['MIN_PRICE']['VALUE'];
+        $of_razm=$value['PROPERTIES']['RAZMER']['VALUE'];
+      }
+    }
+    sort($arr_razm);
+    $position = array_search($of_razm,$arr_razm );
+
+    //$arResult['OFFERS_SELECTED'] = 1;
+
 
     /* !записываем в массив JS значения свойств для отбора ТП (для формы ""Купить в 1 клик) */
 
@@ -139,3 +157,22 @@ $arParams = $component->applyTemplateModifications();
         }
     }
 /*ugrm@ivelirsoft.ru*/
+?>
+
+<script type="text/javascript">
+  $(function(){
+
+
+    var opt_razm =$('.RAZMER .product-item-scu-item-text-container');
+    for (var i=0; i<opt_razm.length; i++){
+      if("<?=$of_razm?>"==$(opt_razm[i]).find('.product-item-scu-item-text').text()) {
+        opt_razm[i].click();
+        console.log($(opt_razm[i]).find('.product-item-scu-item-text').text());
+      }
+    }
+
+
+
+
+  })
+</script>
