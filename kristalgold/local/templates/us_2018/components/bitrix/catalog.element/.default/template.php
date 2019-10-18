@@ -1,7 +1,6 @@
 
 
 
-
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main\Localization\Loc;
@@ -469,6 +468,10 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 															</span>
 														</div>
 														<?
+														if ($property['CODE']=='OSNOVNAYA_VSTAVKA' && $arResult['OPISANIE_KAMNEY']) {?>
+															<div><span>Описание камней: </span><span><?=$arResult['OPISANIE_KAMNEY']?>:</span></div>
+															<?
+														}
 													}
 													unset($property);
 													?>
@@ -643,7 +646,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 										?>
 										<div class="product-item-detail-price-old" id="<?=$itemIds['OLD_PRICE_ID']?>"
 											style="display: <?=($showDiscount ? '' : 'none')?>;">
-											<?=($showDiscount ? $price['PRINT_RATIO_BASE_PRICE'] : '')?>
+											<?/*=($showDiscount ? $price['PRINT_RATIO_BASE_PRICE'] : '')*/?>
 										</div>
 										<?
 									}

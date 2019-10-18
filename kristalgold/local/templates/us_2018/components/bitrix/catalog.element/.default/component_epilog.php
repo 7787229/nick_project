@@ -141,31 +141,40 @@ if(empty($arResult['PROPS_TO_POPUP']['PICTURE'])){
 			<div class='modal-body'>
 				<span class='glyphicon glyphicon-remove' onclick='hidePopup();'></span>
 				<?$APPLICATION->IncludeComponent(
-					"bitrix:form.result.new",
-					"order_in_one_click",
-					Array(
-						"CACHE_TIME" => "3600",
-						"CACHE_TYPE" => "N",
-						"CHAIN_ITEM_LINK" => "",
-						"CHAIN_ITEM_TEXT" => "",
-						"COMPOSITE_FRAME_MODE" => "A",
-						"COMPOSITE_FRAME_TYPE" => "AUTO",
-						"EDIT_URL" => "",
-						"IGNORE_CUSTOM_TEMPLATE" => "N",
-						"LIST_URL" => "",
-						"SEF_MODE" => "N",
-						"SUCCESS_URL" => "",
-						"USE_EXTENDED_ERRORS" => "N",
-						"VARIABLE_ALIASES" => array("RESULT_ID"=>"RESULT_ID","WEB_FORM_ID"=>"WEB_FORM_ID",),
-						"WEB_FORM_ID" => "1",
-
-						"PRODUCT_ID" => $arResult['PROPS_TO_POPUP']['ID'],
-						"PRODUCT_NAME" => $arResult['PROPS_TO_POPUP']['NAME'],
-						"PRODUCT_ARTICLE" => $arResult['PROPS_TO_POPUP']['ARTNUMBER'],
-						"PRODUCT_LINK" => $arResult['PROPS_TO_POPUP']['LINK'],
-						"PRODUCT_PICTURE" => $arResult['PROPS_TO_POPUP']['PICTURE'],
-					)
-				);?>
+	"bitrix:form.result.new", 
+	"order_in_one_click", 
+	array(
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "N",
+		"CHAIN_ITEM_LINK" => "",
+		"CHAIN_ITEM_TEXT" => "",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO",
+		"EDIT_URL" => "",
+		"IGNORE_CUSTOM_TEMPLATE" => "N",
+		"LIST_URL" => "",
+		"SEF_MODE" => "N",
+		"SUCCESS_URL" => "",
+		"USE_EXTENDED_ERRORS" => "N",
+		"WEB_FORM_ID" => "1",
+		"PRODUCT_ID" => $arResult["PROPS_TO_POPUP"]["ID"],
+		"PRODUCT_NAME" => $arResult["PROPS_TO_POPUP"]["NAME"],
+		"PRODUCT_ARTICLE" => $arResult["PROPS_TO_POPUP"]["ARTNUMBER"],
+		"PRODUCT_LINK" => "https://www.kristallgold.ru".$arResult["PROPS_TO_POPUP"]["LINK"],
+		"PRODUCT_PICTURE" => $arResult["PROPS_TO_POPUP"]["PICTURE"],
+		"COMPONENT_TEMPLATE" => "order_in_one_click",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"VARIABLE_ALIASES" => array(
+			"WEB_FORM_ID" => "WEB_FORM_ID",
+			"RESULT_ID" => "RESULT_ID",
+		)
+	),
+	false
+);?>
 			</div>
 		</div>
 	</div>
@@ -177,14 +186,11 @@ if(empty($arResult['PROPS_TO_POPUP']['PICTURE'])){
 	function hidePopup(){
 		$("#popupToOrderInOneClick_background").hide();
 	}
-
 	function uploadPopup(offer_razm,offer_vstavka,offer_cena){
 		
-
 		$('#razmer').val(offer_razm);
 		$('#vstavka').val(offer_vstavka);
 		$('#tovar_price').val(offer_cena);
-
 		setTimeout(function(){
 			showPopup();
 		}, 500);

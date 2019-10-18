@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Оформление заказа");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:sale.order.ajax", 
-	"us", 
+	"us_without_discount", 
 	array(
 		"PAY_FROM_ACCOUNT" => "N",
 		"COUNT_DELIVERY_TAX" => "N",
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"PATH_TO_PAYMENT" => SITE_DIR."personal/order/payment/",
 		"SET_TITLE" => "Y",
 		"DELIVERY2PAY_SYSTEM" => "",
-		"COMPONENT_TEMPLATE" => "us",
+		"COMPONENT_TEMPLATE" => "us_without_discount",
 		"DELIVERY_NO_AJAX" => "Y",
 		"DELIVERY_NO_SESSION" => "N",
 		"TEMPLATE_LOCATION" => ".default",
@@ -58,7 +58,6 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"PRODUCT_COLUMNS_VISIBLE" => array(
 			0 => "PREVIEW_PICTURE",
 			1 => "PROPS",
-			2 => "PRICE_FORMATED",
 		),
 		"ADDITIONAL_PICT_PROP_1" => "-",
 		"ADDITIONAL_PICT_PROP_2" => "-",
@@ -73,7 +72,7 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"ALLOW_APPEND_ORDER" => "Y",
 		"SHOW_NOT_CALCULATED_DELIVERIES" => "L",
 		"SPOT_LOCATION_BY_GEOIP" => "Y",
-		"SHOW_VAT_PRICE" => "Y",
+		"SHOW_VAT_PRICE" => "N",
 		"USE_PRELOAD" => "Y",
 		"SHOW_PICKUP_MAP" => "Y",
 		"PICKUP_MAP_TYPE" => "yandex",
@@ -85,7 +84,9 @@ $APPLICATION->SetTitle("Оформление заказа");
 		"USE_ENHANCED_ECOMMERCE" => "N",
 		"EMPTY_BASKET_HINT_PATH" => "/",
 		"USE_PHONE_NORMALIZATION" => "Y",
-		"HIDE_ORDER_DESCRIPTION" => "N"
+		"HIDE_ORDER_DESCRIPTION" => "N",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO"
 	),
 	false
 );?>

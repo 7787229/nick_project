@@ -65,6 +65,10 @@ $arParams = $component->applyTemplateModifications();
     );
 // $arParams['OFFERS_SORT_FIELD']='PROPERTY_AKTSIYA_AKTIVNA';
 // $arParams['OFFERS_SORT_FIELD2']='catalog_price_1';
+
+    $PROP_425=''; //OPISANIE_KAMNEY
+    $min_price=false;
+
     foreach ($arResult['OFFERS'] as $key => $arOffer) {
         // foreach($arOffer['PROPERTIES']['SHOP']['VALUE_XML_ID'] as $shopKey => $shopXmlID){
         //     $shop[$arOffer['ID']][$shopXmlID] = $arOffer['PROPERTIES']['SHOP']['VALUE'][$shopKey];
@@ -77,6 +81,10 @@ $arParams = $component->applyTemplateModifications();
         //         'SORT' => $arOffer['PROPERTIES'][$skuPropCode]['SORT']
         //     );
         // }
+        if ( $min_price===false || ($arOffer['MIN_PRICE']['VALUE']<$min_price && is_array($arOffer['PROPERTIES']['OPISANIE_KAMNEY']) ) ) {
+            $min_price=$arOffer['MIN_PRICE']['VALUE'];
+            $PROP_425=$arOffer['PROPERTIES']['OPISANIE_KAMNEY']['VALUE'];
+        }
 
         if ( $arOffer["PROPERTIES"]['AKTSIYA_AKTIVNA']["VALUE"]=='Да' ) {
             $arActions[$arOffer['ID']]=array(
@@ -98,7 +106,10 @@ $arParams = $component->applyTemplateModifications();
         if(!empty($arOffer[strtoupper($arParams['OFFERS_SORT_FIELD2'])]))
             $sort['field2'][$arOffer['ID']] = $arOffer[strtoupper($arParams['OFFERS_SORT_FIELD2'])];
     }
-    // printvar('',$offerTreeProps);
+
+    $arResult['OPISANIE_KAMNEY'] = trim($PROP_425); // Описание камней (берем из предложения с минимальной ценой)
+
+    // printvar('',$offerTreeProps);    
     // printvar('', $sort);
 
     $sort_order1 = strtoupper($arParams['OFFERS_SORT_ORDER']) == 'ASC' ? SORT_ASC : SORT_DESC;
@@ -127,11 +138,7 @@ $arParams = $component->applyTemplateModifications();
     // printvar($sort_order1, $js_sort);
     //printvar('', $arResult['ITEM_PRICES']);
     array_multisort($js_sort['field1'], $sort_order1, SORT_NUMERIC, $js_sort['field2'], $sort_order2, SORT_NUMERIC, $arResult['JS_OFFERS']);
-
-
-
-
-    $min_price=999999999999;
+     $min_price=999999999999;
     $of_razm=0;
     $arr_razm=array();
     foreach ($arResult['OFFERS'] as $key => $value) {
@@ -143,8 +150,6 @@ $arParams = $component->applyTemplateModifications();
     }
     sort($arr_razm);
     $position = array_search($of_razm,$arr_razm );
-
-    //$arResult['OFFERS_SELECTED'] = 1;
 
 
     /* !записываем в массив JS значения свойств для отбора ТП (для формы ""Купить в 1 клик) */
@@ -161,8 +166,6 @@ $arParams = $component->applyTemplateModifications();
 
 <script type="text/javascript">
   $(function(){
-
-
     var opt_razm =$('.RAZMER .product-item-scu-item-text-container');
     for (var i=0; i<opt_razm.length; i++){
       if("<?=$of_razm?>"==$(opt_razm[i]).find('.product-item-scu-item-text').text()) {
@@ -170,9 +173,5 @@ $arParams = $component->applyTemplateModifications();
         console.log($(opt_razm[i]).find('.product-item-scu-item-text').text());
       }
     }
-
-
-
-
   })
 </script>

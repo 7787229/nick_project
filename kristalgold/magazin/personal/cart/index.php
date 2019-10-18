@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Корзина");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:sale.basket.basket", 
-	"us", 
+	"us_without_discount", 
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADDITIONAL_PICT_PROP_1" => "-",
@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("Корзина");
 			5 => "SUM",
 		),
 		"COMPATIBLE_MODE" => "Y",
-		"COMPONENT_TEMPLATE" => "us",
+		"COMPONENT_TEMPLATE" => "us_without_discount",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"CORRECT_RATIO" => "N",
@@ -47,7 +47,7 @@ $APPLICATION->SetTitle("Корзина");
 		"GIFTS_PLACE" => "BOTTOM",
 		"GIFTS_PRODUCT_PROPS_VARIABLE" => "prop",
 		"GIFTS_PRODUCT_QUANTITY_VARIABLE" => "",
-		"GIFTS_SHOW_DISCOUNT_PERCENT" => "Y",
+		"GIFTS_SHOW_DISCOUNT_PERCENT" => "N",
 		"GIFTS_SHOW_IMAGE" => "Y",
 		"GIFTS_SHOW_NAME" => "Y",
 		"GIFTS_SHOW_OLD_PRICE" => "N",
@@ -81,20 +81,18 @@ $APPLICATION->SetTitle("Корзина");
 			0 => "top",
 		),
 		"DISPLAY_MODE" => "extended",
-		"PRICE_DISPLAY_MODE" => "Y",
-		"SHOW_DISCOUNT_PERCENT" => "Y",
+		"PRICE_DISPLAY_MODE" => "N",
+		"SHOW_DISCOUNT_PERCENT" => "N",
 		"DISCOUNT_PERCENT_POSITION" => "top-left",
 		"PRODUCT_BLOCKS_ORDER" => "props,sku,columns",
 		"USE_PRICE_ANIMATION" => "Y",
 		"LABEL_PROP" => array(
 			0 => "NEWPRODUCT",
 			1 => "BESTSELLER",
-			2 => "DISCOUNT",
 		),
 		"LABEL_PROP_MOBILE" => array(
 			0 => "NEWPRODUCT",
 			1 => "BESTSELLER",
-			2 => "DISCOUNT",
 		),
 		"LABEL_PROP_POSITION" => "top-right"
 	),

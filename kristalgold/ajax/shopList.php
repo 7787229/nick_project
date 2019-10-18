@@ -1,5 +1,6 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
+global $USER;
 
 if(!CModule::IncludeModule("sale") || !CModule::IncludeModule("catalog") || !CModule::IncludeModule("iblock")) {
 	return;
@@ -134,7 +135,7 @@ if($PRODUCT_ID > 0){
         if( !isset($arShopList[$xml_id]) ) continue;
 
         // акции 
-        if (isset($valOffer['PROPERTIES']['AKTSIYA_AKTIVNA']) && $valOffer['PROPERTIES']['AKTSIYA_AKTIVNA']['VALUE']=='Да' ) {
+        if (isset($valOffer['PROPERTIES']['AKTSIYA_AKTIVNA']) && $valOffer['PROPERTIES']['AKTSIYA_AKTIVNA']['VALUE']=='Да' && $valOffer['PROPERTIES']['AKTSIYA']['VALUE']!=="Спеццена" ) {
         	$valOffer['AKTSIYA']=$valOffer['PROPERTIES']['AKTSIYA']['VALUE'];
         	$valOffer['STARAYA_TSENA']=$valOffer['PROPERTIES']['STARAYA_TSENA']['VALUE'];
         }
@@ -144,15 +145,22 @@ if($PRODUCT_ID > 0){
 
 
 		$arPrice = CPrice::GetBasePrice($keyOffer);
-        if($arPrice['PRICE'] <= 0) continue;
+		$final_price=$arPrice['PRICE'];
+        if($final_price <= 0) continue;
+
+        // Ищем скидки и высчитываем стоимость с учетом найденных
+		$arDiscounts = CCatalogDiscount::GetDiscountByProduct($keyOffer, $USER->GetUserGroupArray(), "N",$arPrice["CATALOG_GROUP_ID"],SITE_ID);
+		if(is_array($arDiscounts) && sizeof($arDiscounts) > 0) {
+			$final_price = CCatalogProduct::CountPriceWithDiscount($arPrice["PRICE"], $arPrice["CURRENCY"], $arDiscounts);
+		}
 
        	$size=$valOffer['PROPERTIES']['RAZMER']['VALUE'];
 
         if( $valOffer["CATALOG_QUANTITY"]>0 ){
             $valOffer['PRICE'] = array(
-				'VALUE' => $arPrice['PRICE'],
+				'VALUE' => $final_price,
 				'CURRENCY' => $arPrice['CURRENCY'],
-				'FORMAT_VALUE' => CurrencyFormat($arPrice['PRICE'], $arPrice['CURRENCY'])
+				'FORMAT_VALUE' => CurrencyFormat($final_price, $arPrice['CURRENCY'])
 			);
             $arShopList[$xml_id]["OFFERS"]["RAZMER"][$size][] = $valOffer;
             $arShopList[$xml_id]["QUANTITY"]+=$valOffer["CATALOG_QUANTITY"];

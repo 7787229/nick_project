@@ -3664,10 +3664,7 @@
 									tbody += '<td>';
 									tbody += '</td>';
 								tbody += '</tr>';
-
-
 */
-
 								tbody += '<tr class="shop-list-offers" data-shop="'+shopID+'">';
 									tbody += '<td colspan="5">';
 										tbody += '<div class="row">';
@@ -3736,7 +3733,8 @@
 													var offer_cena=offers[size][offer]['PRICE']['FORMAT_VALUE'];
 													var onclick="uploadPopup('"+offer_razm+"','"+offer_vstavka+"','"+offer_cena+"');";
 													tbody += '<a href="javascript:void(0)" onclick="'+onclick+'" class="btn-cart-sale btn btn-default product-item-detail-buy-button" id="">Купить в 1 клик</a>';
-												tbody += '</div>';
+
+													tbody += '</div>';
 											tbody += '</div>';
 										tbody += '</div>';
 										tbody += '<hr>';
@@ -3829,12 +3827,19 @@
 	}
 })(window);
 
-
-
 $(function(){
 	$('#sale-on-ckick').click(function(){
 	   showPopup();
 	});
+
+
+
+
+	
+
+
+
+
 
 
 });
