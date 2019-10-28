@@ -3,6 +3,7 @@
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 
+
 /**
  * @global CMain $APPLICATION
  * @var CBitrixComponent $component
@@ -22,6 +23,93 @@ else
 {
 	$basketAction = isset($arParams['SECTION_ADD_TO_BASKET_ACTION']) ? $arParams['SECTION_ADD_TO_BASKET_ACTION'] : '';
 }
+
+
+
+$changeContent=false;
+switch ($arResult["VARIABLES"]["SECTION_ID"]) {
+			case 326:
+			$GLOBALS['arrFilter'] = array(
+				"PROPERTY_406_VALUE"=>array("Изумруд гидротермальный","Изумруд природный уральский")
+			);
+			$cat_id=$arResult["VARIABLES"]["SECTION_ID"];
+			$changeContent=true;
+			break;
+	}
+
+	if ($changeContent) {
+		$SECTION_ID =2;
+		$SECTION_CODE = 'catalog';
+	} else {
+		$SECTION_ID =$arResult["VARIABLES"]["SECTION_ID"];
+		$SECTION_CODE = $arResult["VARIABLES"]["SECTION_CODE"];
+	}
+
+
+	if ($changeContent) {
+
+		?>
+		<style media="screen">
+			.wr-menu-us {
+				list-style-type: none;
+		    margin-top: 87px;
+		    font-size: 14px;
+			}
+			ul.wr-menu-us li {
+	    margin-top: 4px;
+	}
+		.wr-menu-us div {
+			color: #459e80;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 770px) {
+			.wr-menu-us {
+				list-style-type: none;
+    font-size: 14px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+		margin-top: 40px;
+
+			}
+    .wr-menu-us div {
+    	display: none;
+    }
+		ul.wr-menu-us li {
+    margin-left: 9px;
+    margin-top: 4px;
+}
+
+		}
+		</style>
+
+
+		<div class="col-md-3 col-sm-4">
+
+			<ul class="wr-menu-us">
+
+				<div class="prop-title">Каталог</div>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/rasprodazha/">Распродажа</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/rings/">Кольца</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/sergi/">Серьги</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/braslety/">Браслеты</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/kole/">Колье</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/broshi/">Броши</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/pendants/">Подвески</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/suveniry/">Сувениры</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/filter/kollektsiya_dlya_sayta-is-kollekciya-ukrashenij-s-redkimi-prirodnymi-kamnyami/apply/">Редкие драгоценные камни</a></li>
+				<li><a href="https://www.kristallgold.ru/magazin/catalog/filter/kollektsiya_dlya_sayta-is-kollekciya-krestikov-s-dragocennymi-kamnyami/apply/">Крестики</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$('.bx-sidebar-block').css('display','none');
+		</script>
+
+		<?
+
+	}
 
 if ($isFilter || $isSidebar): ?>
 	<div class="col-md-3 col-sm-4<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' hidden-xs' : '')?>">
@@ -53,12 +141,15 @@ if ($isFilter || $isSidebar): ?>
 						"SEF_MODE" => $arParams["SEF_MODE"],
 						"SEF_RULE" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["smart_filter"],
 						"SMART_FILTER_PATH" => $arResult["VARIABLES"]["SMART_FILTER_PATH"],
+
+
 						"PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
 						"INSTANT_RELOAD" => $arParams["INSTANT_RELOAD"],
 					),
 					$component,
 					array('HIDE_ICONS' => 'Y')
 				);
+			//	echo $arResult["VARIABLES"]["SMART_FILTER_PATH"].'<br>';
 				?>
 			</div>
 		<? endif ?>
@@ -442,8 +533,11 @@ if ($isFilter || $isSidebar): ?>
 					"OFFERS_SORT_ORDER2" => $arParams["OFFERS_SORT_ORDER2"],
 					"OFFERS_LIMIT" => $arParams["LIST_OFFERS_LIMIT"],
 
-					"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
-					"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+					//"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+				//	"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+				"SECTION_ID" => $SECTION_ID,
+				"SECTION_CODE" => $SECTION_CODE,
+
 					"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
 					"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
 					"USE_MAIN_ELEMENT_SECTION" => $arParams["USE_MAIN_ELEMENT_SECTION"],
@@ -646,14 +740,14 @@ if ($isFilter || $isSidebar): ?>
 </div>
 
 <?
-	
+
 	$rsResult = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arCurSection), false, $arSelect = array("UF_*"));
-	
-	if($arSec = $rsResult->GetNext()) { 
+
+	if($arSec = $rsResult->GetNext()) {
 
 		if($arSec['IBLOCK_SECTION_ID']){
 			$rsResultParent = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arSec['IBLOCK_SECTION_ID']), false, $arSelect = array("UF_*"));
-		
+
 
 			if($arSecParent = $rsResultParent -> GetNext()) {
 				$APPLICATION->SetPageProperty("og:title", $arSecParent['UF_OG_TITLE']);
@@ -664,8 +758,8 @@ if ($isFilter || $isSidebar): ?>
 				$APPLICATION->SetPageProperty("twitter:hashtags", $arSecParent['UF_TWITTER_HASHTAGS']);
 			}
 		}
-		
-		
+
+
 		//printvar('', $arSec['DESCRIPTION']);
 		if($arSec['DESCRIPTION']){
 			?>
@@ -682,14 +776,14 @@ if ($isFilter || $isSidebar): ?>
 		// UF_TWITTER_TITLE
 		// UF_TWITTER_DESCR
 		// UF_TWITTER_HASHTAGS
-		
+
 		$APPLICATION->SetPageProperty("og:title", $arSec['UF_OG_TITLE']);
 		$APPLICATION->SetPageProperty("og:description", $arSec['UF_OG_DESCRIPTION']);
 		$APPLICATION->SetPageProperty("og:image", $arSec['UF_OG_IMAGE']);
 		$APPLICATION->SetPageProperty("twitter:title", $arSec['UF_TWITTER_TITLE']);
 		$APPLICATION->SetPageProperty("twitter:description", $arSec['UF_TWITTER_DESCR']);
 		$APPLICATION->SetPageProperty("twitter:hashtags", $arSec['UF_TWITTER_HASHTAGS']);
-		
+
 
 	}
 
@@ -697,5 +791,103 @@ if ( count($arSEO) ) {
 	$APPLICATION->SetPageProperty('og:title', $arSEO['TITLE_SEO_VALUE']);
 	$APPLICATION->SetPageProperty('og:description', $arSEO['DESCRIPTION_SEO_VALUE']);
 }
-						
+
+
+/*change*/
+
+/*
+
+switch ($arResult['VARIABLES']['SMART_FILTER_PATH']) {
+			case "tipizdeliya-is-kolco/metall-is-zoloto/tsvet_metalla-is-belyj":
+			$resultFields = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => 1, "ID" => 325), false, $arSelect = array("UF_*"));
+			break;
+
+			case "osnovnaya_vstavka-is-izumrud-prirodnyj-uralskij-or-izumrud-gidrotermalnyj/vstavki-is-izumrud-or-izumrud-gidrotermalnyj-or-izumrud*-or-izumrud-gt-or-izumrud-prirodnyj-uralskij":
+			$resultFields = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => 1, "ID" => 326), false, $arSelect = array("UF_*"));
+			break;
+
+}
+if ($resultFields)   {
+	$result=$resultFields -> GetNext();
+
+
+
+
+
+?>
+
+<script type="text/javascript">
+	$('.bx_catalog_text a').text("<?=$result['NAME']?>");
+</script>
+<div class="col-xs-12">
+	<div class="bx-section-desc">
+		<p class="bx-section-desc-post"><?=$result['DESCRIPTION'];?></p>
+	</div>
+</div>
+
+<?
+
+
+	if (count($resultFields)> 0 ) {
+
+		if (strlen($mtitle=$result['UF_BROWSER_TITLE'])>0)
+				$APPLICATION->SetPageProperty("title", $mtitle);
+
+		if (strlen($mkey=$result['UF_KEYWORDS'])>0)
+				$APPLICATION->SetPageProperty("keywords", $mkey);
+
+		if (strlen($mdesc=$result['UF_META_DESCRIPTION'])>0)
+				$APPLICATION->SetPageProperty("description", $mdesc);
+
+
+
+
+
+		if (strlen($ogtitle=$result['UF_OG_TITLE'])>0)
+				$APPLICATION->SetPageProperty("og:title", $ogtitle);
+
+		if (strlen($ogdesc=$result ['UF_OG_DESCRIPTION'])>0)
+		{
+			$APPLICATION->SetPageProperty("og:description", $ogdesc);
+		}
+
+
+		if (strlen($ogimg=$result ['UF_OG_IMAGE'])>0)
+				$APPLICATION->SetPageProperty("og:image", $ogimg);
+
+		if (strlen($twtitle=$result ['UF_TWITTER_TITLE'])>0)
+				$APPLICATION->SetPageProperty("twitter:title", $twtitle);
+
+		if (strlen($twdesc=$result ['UF_TWITTER_DESCR'])>0)
+				$APPLICATION->SetPageProperty("twitter:description", $twdesc);
+
+		if (strlen($twhash=$result ['UF_TWITTER_HASHTAGS'])>0)
+				$APPLICATION->SetPageProperty("twitter:hashtags", $twhash);
+
+		if (strlen($twimg=$result ['UF_TWITTER_IMG'])>0)
+				$APPLICATION->SetPageProperty("twitter:img", $twimg);
+	}
+
+
+
+
+}*/
+
+/*change*/
+
+if ($changeContent) {
+	//$APPLICATION->SetPageProperty("title", "Украшения с изумрудами");
+	$ipropSectionValues = new \Bitrix\Iblock\InheritedProperty\SectionValues(1, $cat_id);
+	$arSEOmain = $ipropSectionValues->getValues();
+
+	if ($arSEOmain['SECTION_META_TITLE'] != false) {
+			$APPLICATION->SetPageProperty("title", $arSEOmain['SECTION_META_TITLE']);
+		}
+		if ( $arSEOmain['SECTION_META_KEYWORDS'] != false) {
+			$APPLICATION->SetPageProperty("keywords",  $arSEOmain['SECTION_META_KEYWORDS']);
+		}
+		if ( $arSEOmain['SECTION_META_DESCRIPTION'] != false) {
+			$APPLICATION->SetPageProperty("description",  $arSEOmain['SECTION_META_DESCRIPTION']);
+		}
+}
 ?>
