@@ -61,27 +61,32 @@ $this->setFrameMode(true);
 	?>
 
 	<div class="list-stores" >
-		<div class='row'>
+		<div itemscope itemtype="http://schema.org/Organization" class='row'>
+			<span itemprop="name" style="display:none;">Ювелирная сеть «Кристалл Мечты»</span>
+			<span itemprop="telephone" style="display:none;">+7 (495) 788-77-22</span>
+			<span itemprop="address" style="display:none;">127051, Москва, ул. Петровка, д.26, стр. 2</span>
 		<?foreach($arResult['ITEMS'] as $arItemKey => $arItemVal){?>
 			<div class='col-md-4 col-sm-6 col-sx-12'>
 				<a class='store_block' href="#top" onclick="activeBaloon(this);">
 					<div class="store" data-count="<?=$arItemKey + 1;?>">
-						<div class="date-store">
+						<div itemprop="department" itemscope itemtype="http://schema.org/Organization"  class="date-store">
 							<?if(!empty($arItemVal["PROPERTIES"]["METRO_COLOR"]["VALUE_XML_ID"]) && !empty($arItemVal["PROPERTIES"]["METRO"]["VALUE"])){?>
 								<p class="name <?=$arItemVal["PROPERTIES"]["METRO_COLOR"]["VALUE_XML_ID"];?>"><?=$arItemVal["PROPERTIES"]["METRO"]["VALUE"];?>,</p>
 							<?}?>
-							<b><?=$arItemVal["NAME"];?></b><br>
+							<b itemprop="name"><?=$arItemVal["NAME"];?></b><br>
 							<?if(!empty($arItemVal["PROPERTIES"]["TOWN"]["VALUE"]) or !empty($arItemVal["PROPERTIES"]["ADRESS"]["VALUE"])){?>
 								Адрес:
+								<span itemprop="address">
 								<?if(!empty($arItemVal["PROPERTIES"]["TOWN"]["VALUE"])){?>
 									<?=$arItemVal["PROPERTIES"]["TOWN"]["VALUE"];?>,<br>
 								<?}?>
 								<?if(!empty($arItemVal["PROPERTIES"]["ADRESS"]["VALUE"])){?>
 									<?=$arItemVal["PROPERTIES"]["ADRESS"]["VALUE"];?><br>
 								<?}?>
+								</span>
 							<?}?>
 							<?if(!empty($arItemVal["PROPERTIES"]["PHONE"]["VALUE"])){?>
-								Телефон: <?=$arItemVal["PROPERTIES"]["PHONE"]["VALUE"];?><br>
+								Телефон: <span itemprop="telephone">  <?=$arItemVal["PROPERTIES"]["PHONE"]["VALUE"];?></span><br>
 							<?}?>
 							<?if(!empty($arItemVal["PROPERTIES"]["WORK_TIME"]["VALUE"])){?>
 								Время работы: <?=$arItemVal["PROPERTIES"]["WORK_TIME"]["VALUE"];?>

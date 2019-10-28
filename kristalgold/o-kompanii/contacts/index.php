@@ -5,18 +5,22 @@ $APPLICATION->SetPageProperty("keywords", "контакты ювелирной �
 $APPLICATION->SetPageProperty("title", "Контакты и схема проезда \"Кристалл Мечты\"");
 $APPLICATION->SetTitle("Контакты");
 ?><h1>Контакты</h1>
+<div itemscope itemtype="http://schema.org/Organization">
+
+
 <p>
-	 Единый многоканальный телефон ювелирной сети «Кристалл Мечты»&nbsp;+7 (495) 788-77-22
+	 <span itemprop="telephone"> Единый многоканальный телефон ювелирной сети «Кристалл Мечты»&nbsp;+7 (495) 788-77-22 </span>
 </p>
 <p>
-	 Интернет-магазин&nbsp;+7 (495) 788-77-22, <a href="shop@kristallgold.ru">shop@kristallgold.ru</a>
+	 <span itemprop="telephone"> Интернет-магазин&nbsp;  +7 (495) 788-77-22 </span>, <a href="shop@kristallgold.ru">shop@kristallgold.ru</a>
 </p>
 <p>
-	 Напишите нам: <a href="mailto:info@kristallgold.ru">info@kristallgold.ru</a>
+	 Напишите нам: <a href="mailto:info@kristallgold.ru"> <span itemprop="email"> info@kristallgold.ru</span></a>
 </p>
-<p>
+<p  itemprop="address">
 	 Адрес: 127051, Москва, ул. Петровка, д.26, стр. 2
 </p>
+</div>
 <p>
 	 Схема проезда:
 </p>
