@@ -1713,12 +1713,12 @@ if (empty($arRunErrors))
 								case 'description':
 									$itemsContent .= "<description>".
 										($offer['DESCRIPTION'] !== '' ? $offer['DESCRIPTION'] : $row['DESCRIPTION']).
-										"Тип изделия: ".yandex_text2xml($row['PROPERTIES'][15]['VALUE'], true)."\n".
-										"Металл: ".yandex_text2xml(implode(", ", $row['PROPERTIES'][16]['VALUE']), true)."\n".
-										"Проба: ".yandex_text2xml(implode(", ",$row['PROPERTIES'][17]['VALUE']), true)."\n".
-										"Основная вставка: ".yandex_text2xml(implode(", ",$offer['PROPERTIES'][426]['VALUE']), true)."\n".
+										(strlen($row['PROPERTIES'][15]['VALUE'])>0 ? "Тип изделия: ".yandex_text2xml($row['PROPERTIES'][15]['VALUE'], true).";\n" : "").
+										(is_array($row['PROPERTIES'][16]['VALUE']) ? "Металл: ".yandex_text2xml(implode(", ", $row['PROPERTIES'][16]['VALUE']), true).";\n" : "").
+										(is_array($row['PROPERTIES'][17]['VALUE']) ? "Проба: ".yandex_text2xml(implode(", ",$row['PROPERTIES'][17]['VALUE']), true).";\n" : "").
+										(is_array($offer['PROPERTIES'][426]['VALUE']) ? "Основная вставка: ".yandex_text2xml(implode(", ",$offer['PROPERTIES'][426]['VALUE']), true)."\n" : "").
 										"</description>\n";
-										file_put_contents('filename2.txt', print_r($offer, true));
+										file_put_contents('filename2.txt', print_r($row, true));
 									break;
 								case 'param':
 									if ($parametricFieldsExist)
