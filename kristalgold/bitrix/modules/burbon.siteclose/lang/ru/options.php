@@ -1,0 +1,30 @@
+<?
+   $MESS ['BU_SC_MAIN_TITLE'] = "Настройки страницы-заглушки для сайта";
+   $MESS ['BU_SC_CHECKBOX'] = "Активировать заглушку: ";
+   $MESS ['BU_SC_ADMIN'] = "Показать кнопку входа в админку: ";
+   $MESS ['BU_SC_HEADER'] = "Заголовок окна браузера: ";  
+   $MESS ['BU_SC_TYPE'] = "Тип таймера: ";
+   $MESS ['BU_SC_TYPE_SIMPLE'] = "Простой";
+   $MESS ['BU_SC_THEME'] = "Цветовая схема: ";
+   $MESS ['BU_SC_THEME_DARK'] = "Темный";
+   $MESS ['BU_SC_THEME_WHITE'] = "Светлый";
+   $MESS ['BU_SC_THEME_BLUE'] = "Голубой";
+   $MESS ['BU_SC_THEME_PINK'] = "Розовый";   
+   $MESS ['BU_SC_HEADER_EX'] = "Сайт в разработке";    
+   $MESS ['BU_SC_LOGO'] = "Логотип: ";
+   $MESS ['BU_SC_TEXT'] = "Сообщение для пользователей: ";
+   $MESS ['BU_SC_TEXT_EX'] = "Добро пожаловать! Сайт сейчас дорабатывается, но скоро открытие. Не пропустите!";    
+   $MESS ['BU_SC_CONTACTS'] = "Контактная информация: ";
+   $MESS ['BU_SC_PHONE'] = "Телефон: ";
+   $MESS ['BU_SC_EMAIL'] = "E-mail: ";
+   $MESS ['BU_SC_ADDRESS'] = "Адрес: ";
+   $MESS ['BU_SC_CONTACTS_EX'] = " Тел: 8-000-000-00-00<br>Адрес: -----";    
+   $MESS ['BU_SC_DATE'] = "Дата открытия сайта: "; 
+   $MESS ['BU_SC_SHOW_CONTACTS'] = "Показывать контакты: ";
+   $MESS ['BU_SC_SHOW_LOGO'] = "Показывать логотип: ";
+   $MESS ['BU_SC_SHOW_COUNT'] = "Показывать счётчик: ";
+   $MESS ['BU_SC_FILE_ERROR'] = "Загружаемый файл должен быть картинкой!";
+   $MESS ['BU_SC_ERROR'] = "Ошибка";
+   $MESS ['BU_SC_MESSAGE'] = "<span style='color:red'>Внимание!</span> Заглушка работает без закрытия публичной части через главный модуль.";
+   $MESS ['MAIN_RESTORE_DEFAULTS'] = "По умолчанию";
+?>

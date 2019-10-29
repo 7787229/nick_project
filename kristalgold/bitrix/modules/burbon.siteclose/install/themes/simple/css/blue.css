@@ -1,0 +1,35 @@
+body {
+	color: #5e6e6e;
+}
+
+#wrap {
+	background: #b0d4d4;
+}
+
+.description {
+	background: #a6cdcd;
+}
+
+.counter .block .value {
+	color: #a6cdcd;
+}
+
+.enter span {
+	color: #fff;
+}
+
+.enter:hover span {
+	color: #536c6c;
+}
+
+.enter:active span {
+	color: #0e1616;
+}
+
+.enter .hint {
+	color: #536c6c;
+}
+
+.enter .img {
+	background-image: url("../images/enter_blue.png");
+}

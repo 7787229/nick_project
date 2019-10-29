@@ -1,0 +1,112 @@
+Array
+(
+    [ID] => 44488
+    [IBLOCK_ID] => 2
+    [IBLOCK_SECTION_ID] => 
+    [NAME] => Сувенир, Серебро - 925 (1 изм -0,058 4/2 ; 2 бр кр.-17-0,015 2/4 ) ШК: 2000000140087
+    [PREVIEW_PICTURE] => 0
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_PICTURE] => 0
+    [DETAIL_PAGE_URL] => /magazin/suvenir-serebro-925-43258/
+    [LANG_DIR] => /
+    [CODE] => suvenir-serebro-925-1-izm-0-058-4-2-2-br-kr-17-0-015-2-4-shk-2000000140087
+    [EXTERNAL_ID] => 15c76272-b20b-11e9-9280-00215ad000e6#2000000140087#
+    [IBLOCK_TYPE_ID] => catalog
+    [IBLOCK_CODE] => catalog_s1
+    [IBLOCK_EXTERNAL_ID] => catalog_s1#
+    [LID] => s1
+    [AVAILABLE] => Y
+    [TYPE] => 4
+    [VAT_ID] => 2
+    [VAT_INCLUDED] => Y
+    [PARENT_ID] => 43258
+    [PROPERTIES] => Array
+        (
+            [426] => Array
+                (
+                    [ID] => 426
+                    [PROPERTY_TYPE] => L
+                    [MULTIPLE] => Y
+                    [USER_TYPE] => 
+                    [VALUE_ENUM] => Array
+                        (
+                            [0] => Бриллиант
+                            [1] => Изумруд природный уральский
+                        )
+
+                    [VALUE_XML_ID] => Array
+                        (
+                            [0] => brilliant
+                            [1] => izumrud-prirodnyj-uralskij
+                        )
+
+                    [VALUE_SORT] => Array
+                        (
+                            [0] => 1100
+                            [1] => 5400
+                        )
+
+                    [VALUE] => Array
+                        (
+                            [0] => Бриллиант
+                            [1] => Изумруд природный уральский
+                        )
+
+                    [PROPERTY_VALUE_ID] => Array
+                        (
+                            [0] => 6235883
+                            [1] => 6235884
+                        )
+
+                    [VALUE_ENUM_ID] => Array
+                        (
+                            [0] => 12048
+                            [1] => 22711
+                        )
+
+                    [DESCRIPTION] => Array
+                        (
+                            [0] => 
+                            [1] => 
+                        )
+
+                    [~VALUE] => Array
+                        (
+                            [0] => Бриллиант
+                            [1] => Изумруд природный уральский
+                        )
+
+                    [~DESCRIPTION] => Array
+                        (
+                            [0] => 
+                            [1] => 
+                        )
+
+                )
+
+        )
+
+    [PRICES] => Array
+        (
+            [1] => Array
+                (
+                    [ID] => 43621
+                    [PRODUCT_ID] => 44488
+                    [CATALOG_GROUP_ID] => 1
+                    [PRICE] => 13515.00
+                    [CURRENCY] => RUB
+                )
+
+        )
+
+    [PICTURE] => 
+    [DESCRIPTION] => 
+    [RESULT_PRICE] => Array
+        (
+            [MIN_PRICE] => 10812
+            [FULL_PRICE] => 13515
+            [CURRENCY] => RUB
+        )
+
+)

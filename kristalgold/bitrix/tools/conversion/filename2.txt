@@ -1,0 +1,8 @@
+Array
+(
+    [PROTOCOL] => https://
+    [SITE_NAME] => kristallgold.ru
+    [SITE_DIR] => /
+    [DESCRIPTION] => PREVIEW_TEXT
+    [MAX_DESCRIPTION_LENGTH] => 3000
+)

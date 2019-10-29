@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("TITLE", "Каталог украшений легендарного Ювелирного Дома 'Кристалл Мечты'");
+$APPLICATION->SetPageProperty("keywords", "Каталог ювелирных изделий 'Кристалл Мечты'");
 $APPLICATION->SetPageProperty("TWITTER:DESCRIPTION", "Каталог украшений легендарного Ювелирного Дома 'Кристалл Мечты'");
 $APPLICATION->SetPageProperty("OG:DESCRIPTION", "Заказать украшения в интернет магазине с бесплатной доставкой!<br>Эксклюзивные элитные изделия с драгоценными камнями!<br> Контакты отдела продаж: +7 (495) 625-19-45");
-$APPLICATION->SetPageProperty("OG:TITLE", "Каталог ювелирных изделий 'Кристалл Мечты'");
+$APPLICATION->SetPageProperty("OG:TITLE", "Украшения с изумрудами в Москве");
 $APPLICATION->SetPageProperty("description", "Ювелирный интернет-магазин.");
 $APPLICATION->SetTitle("Магазин");
 ?><?$APPLICATION->IncludeComponent(

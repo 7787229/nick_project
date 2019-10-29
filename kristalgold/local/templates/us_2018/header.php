@@ -74,11 +74,17 @@ IncludeTemplateLangFile(__FILE__);?>
 
     	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <?
+ <?
         $curPage = $APPLICATION->GetCurPage(true);
         $curDir = $APPLICATION->GetCurDir();
+
+$prevdir = explode("/", $curPage);
+
         if (preg_match('/^\/magazin/', $curPage)) {
-            echo '<link rel="canonical" href="https://www.kristallgold.ru'. $curDir . '" />';
+			if ($prevdir[4] == '') {echo '<link rel="canonical" href="https://www.kristallgold.ru'. $curDir . '" />';}
+else if ($prevdir[3] == 'index.php' || $prevdir[3] == 'filter') {echo '<link rel="canonical" href="https://www.kristallgold.ru'. '/' . $prevdir[1] . '/' . $prevdir[2] . '/' . '" />';}
+else if ($prevdir[4] == 'index.php' || $prevdir[4] == 'filter') {echo '<link rel="canonical" href="https://www.kristallgold.ru'. '/' . $prevdir[1] . '/' . $prevdir[2] . '/' . $prevdir[3] . '/' . '" />';}
+else {echo '<link rel="canonical" href="https://www.kristallgold.ru'. '/' . $prevdir[1] . '/' . $prevdir[2] . '/' . $prevdir[3] . '/' . $prevdir[4] . '/' . '" />';}
         }
         ?>
     	<title><?$APPLICATION->ShowTitle()?></title>

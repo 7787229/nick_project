@@ -4,8 +4,8 @@ $APPLICATION->SetTitle("Оформление заказа");
 ?>
 
 <?$APPLICATION->IncludeComponent(
-	"bitrix:sale.order.ajax", 
-	"us_without_discount", 
+	"bitrix:sale.order.ajax",
+	"us_without_discount",
 	array(
 		"PAY_FROM_ACCOUNT" => "N",
 		"COUNT_DELIVERY_TAX" => "N",

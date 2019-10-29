@@ -1,0 +1,35 @@
+body {
+	color: #8e7d7b;
+}
+
+#wrap {
+	background: #f2d3d0;
+}
+
+.description {
+	background: #d4bcb9;
+}
+
+.counter .block .value {
+	color: #edc3bf;
+}
+
+.enter span {
+	color: #fff;
+}
+
+.enter:hover span {
+	color: #d59b9b;
+}
+
+.enter:active span {
+	color: #b77675;
+}
+
+.enter .hint {
+	color: #d4bcb9;
+}
+
+.enter .img {
+	background-image: url("../images/enter_pink.png");
+}

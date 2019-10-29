@@ -1,0 +1,12 @@
+2017-May-25 07:20:07 Наличие необходимых модулей php (check_php_modules): Ok
+Все необходимые модули установлены
+2017-May-25 07:20:07 Обязательные параметры PHP (check_php_settings): Ok
+Настройки правильные
+2017-May-25 07:20:07 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2017-May-25 07:20:07 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2017-May-25 07:20:07 Сохранение сессии (check_session): Ok
+50% done
+2017-May-25 07:20:07 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Fail
+Ошибка! Настройки mbstring в /bitrix/.settings.php (utf_mode) и в /bitrix/php_interface/dbconn.php (BX_UTF) отличаются.

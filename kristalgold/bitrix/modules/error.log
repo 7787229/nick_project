@@ -1,0 +1,2618 @@
+2017-06-19 10:07:06 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:07:15 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:07:15 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:07:34 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:07:34 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:08:18 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:08:18 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:08:26 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:08:26 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:08:35 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:08:35 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:09:30 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:09:30 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:09:36 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:09:36 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:09:37 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:09:37 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:10:37 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:10:37 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:10:42 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:10:42 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:10:49 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:10:49 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:11:38 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:11:38 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:11:54 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:11:54 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:12:00 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:12:00 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:12:22 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:12:22 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:12:39 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:12:39 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:13:06 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:13:06 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:13:12 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:13:12 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:13:40 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:13:40 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:14:18 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:14:18 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:14:24 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:14:24 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:14:34 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:14:34 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:14:41 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:14:41 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:15:30 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:15:30 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:15:35 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:15:35 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:15:36 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:15:36 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:15:42 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:15:42 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:16:36 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:16:36 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:16:41 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:16:41 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:16:43 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:16:43 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:16:47 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:16:47 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:17:22 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#12: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#13: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:22 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:23 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#12: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#13: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:23 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:24 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#12: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#13: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:24 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:25 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#12: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#13: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:25 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog.php:10
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/header.php:1
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/index.php:2
+----------
+2017-06-19 10:17:37 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:17:37 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:17:43 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:17:43 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:17:53 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:17:53 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:17:57 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:17:57 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:18:38 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:18:38 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:19:05 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:19:05 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:19:07 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:19:07 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:19:39 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:19:39 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:20:17 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:20:17 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:20:17 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:20:17 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------
+2017-06-19 10:20:39 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#12: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------
+2017-06-19 10:20:39 - Host: mag.uvelirsoft.ru:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function Bitrix\Main\DB\mysql_connect() (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:45
+#0: Bitrix\Main\DB\MysqlConnection->connectInternal()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/mysqlconnection.php:103
+#1: Bitrix\Main\DB\MysqlConnection->queryInternal(string, array, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/db/connection.php:329
+#2: Bitrix\Main\DB\Connection->query(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:226
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#5: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#7: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#9: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/public/session.php:8
+#11: require(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/tools/public_session.php:1
+----------

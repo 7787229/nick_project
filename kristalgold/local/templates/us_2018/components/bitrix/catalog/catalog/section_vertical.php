@@ -1,9 +1,6 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
-
-
 /**
  * @global CMain $APPLICATION
  * @var CBitrixComponent $component
@@ -11,10 +8,8 @@ use Bitrix\Main\ModuleManager;
  * @var array $arResult
  * @var array $arCurSection
  */
-
 $APPLICATION->SetPageProperty("og:image",'https://kristallgold.ru//upload/iblock/a1c/Kolco_Serebro_925_102101845.JPG');
 $APPLICATION->SetPageProperty("twitter:image",'https://kristallgold.ru//upload/iblock/a1c/Kolco_Serebro_925_102101845.JPG');
-
 if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP']) && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] == 'Y')
 {
 	$basketAction = isset($arParams['COMMON_ADD_TO_BASKET_ACTION']) ? $arParams['COMMON_ADD_TO_BASKET_ACTION'] : '';
@@ -23,12 +18,9 @@ else
 {
 	$basketAction = isset($arParams['SECTION_ADD_TO_BASKET_ACTION']) ? $arParams['SECTION_ADD_TO_BASKET_ACTION'] : '';
 }
-
-
-
 $changeContent=false;
 switch ($arResult["VARIABLES"]["SECTION_ID"]) {
-			case 326:
+			case 325:
 			$GLOBALS['arrFilter'] = array(
 				"PROPERTY_406_VALUE"=>array("Изумруд гидротермальный","Изумруд природный уральский")
 			);
@@ -36,7 +28,6 @@ switch ($arResult["VARIABLES"]["SECTION_ID"]) {
 			$changeContent=true;
 			break;
 	}
-
 	if ($changeContent) {
 		$SECTION_ID =2;
 		$SECTION_CODE = 'catalog';
@@ -44,10 +35,7 @@ switch ($arResult["VARIABLES"]["SECTION_ID"]) {
 		$SECTION_ID =$arResult["VARIABLES"]["SECTION_ID"];
 		$SECTION_CODE = $arResult["VARIABLES"]["SECTION_CODE"];
 	}
-
-
 	if ($changeContent) {
-
 		?>
 		<style media="screen">
 			.wr-menu-us {
@@ -72,7 +60,6 @@ switch ($arResult["VARIABLES"]["SECTION_ID"]) {
     display: flex;
     flex-wrap: wrap;
 		margin-top: 40px;
-
 			}
     .wr-menu-us div {
     	display: none;
@@ -81,7 +68,6 @@ switch ($arResult["VARIABLES"]["SECTION_ID"]) {
     margin-left: 9px;
     margin-top: 4px;
 }
-
 		}
 		</style>
 
@@ -108,9 +94,7 @@ switch ($arResult["VARIABLES"]["SECTION_ID"]) {
 		</script>
 
 		<?
-
 	}
-
 if ($isFilter || $isSidebar): ?>
 	<div class="col-md-3 col-sm-4<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' hidden-xs' : '')?>">
 		<? if ($isFilter): ?>
@@ -141,8 +125,6 @@ if ($isFilter || $isSidebar): ?>
 						"SEF_MODE" => $arParams["SEF_MODE"],
 						"SEF_RULE" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["smart_filter"],
 						"SMART_FILTER_PATH" => $arResult["VARIABLES"]["SMART_FILTER_PATH"],
-
-
 						"PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
 						"INSTANT_RELOAD" => $arParams["INSTANT_RELOAD"],
 					),
@@ -195,7 +177,6 @@ if ($isFilter || $isSidebar): ?>
 					}
 					$obCache->EndDataCache($arRecomData);
 				}
-
 				if (!empty($arRecomData) && $arParams['USE_GIFTS_SECTION'] === 'Y')
 				{
 					?>
@@ -209,7 +190,6 @@ if ($isFilter || $isSidebar): ?>
 							</div>
 							<?
 						}
-
 						CBitrixComponent::includeComponentClass('bitrix:sale.products.gift.section');
 						$APPLICATION->IncludeComponent(
 							'bitrix:sale.products.gift.section',
@@ -217,14 +197,11 @@ if ($isFilter || $isSidebar): ?>
 							array(
 								'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
 								'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-
 								'SECTION_ID' => $arResult['VARIABLES']['SECTION_ID'],
 								'SECTION_CODE' => $arResult['VARIABLES']['SECTION_CODE'],
 								'SECTION_ID_VARIABLE' => $arParams['SECTION_ID_VARIABLE'],
-
 								'PRODUCT_ID_VARIABLE' => $arParams['PRODUCT_ID_VARIABLE'],
 								'ACTION_VARIABLE' => (!empty($arParams['ACTION_VARIABLE']) ? $arParams['ACTION_VARIABLE'] : 'action').'_spgs',
-
 								'PRODUCT_ROW_VARIANTS' => \Bitrix\Main\Web\Json::encode(
 									SaleProductsGiftSectionComponent::predictRowVariants(
 										$arParams['GIFTS_SECTION_LIST_PAGE_ELEMENT_COUNT'],
@@ -234,7 +211,6 @@ if ($isFilter || $isSidebar): ?>
 								'PAGE_ELEMENT_COUNT' => $arParams['GIFTS_SECTION_LIST_PAGE_ELEMENT_COUNT'],
 								'DEFERRED_PRODUCT_ROW_VARIANTS' => '',
 								'DEFERRED_PAGE_ELEMENT_COUNT' => 0,
-
 								'SHOW_DISCOUNT_PERCENT' => $arParams['GIFTS_SHOW_DISCOUNT_PERCENT'],
 								'DISCOUNT_PERCENT_POSITION' => $arParams['DISCOUNT_PERCENT_POSITION'],
 								'SHOW_OLD_PRICE' => $arParams['GIFTS_SHOW_OLD_PRICE'],
@@ -243,29 +219,23 @@ if ($isFilter || $isSidebar): ?>
 								'SHOW_SLIDER' => $arParams['LIST_SHOW_SLIDER'],
 								'SLIDER_INTERVAL' => isset($arParams['LIST_SLIDER_INTERVAL']) ? $arParams['LIST_SLIDER_INTERVAL'] : '',
 								'SLIDER_PROGRESS' => isset($arParams['LIST_SLIDER_PROGRESS']) ? $arParams['LIST_SLIDER_PROGRESS'] : '',
-
 								'TEXT_LABEL_GIFT' => $arParams['GIFTS_DETAIL_TEXT_LABEL_GIFT'],
-
 								'LABEL_PROP_'.$arParams['IBLOCK_ID'] => array(),
 								'LABEL_PROP_MOBILE_'.$arParams['IBLOCK_ID'] => array(),
 								'LABEL_PROP_POSITION' => $arParams['LABEL_PROP_POSITION'],
-
 								'ADD_TO_BASKET_ACTION' => $basketAction,
 								'MESS_BTN_BUY' => $arParams['~GIFTS_MESS_BTN_BUY'],
 								'MESS_BTN_ADD_TO_BASKET' => $arParams['~GIFTS_MESS_BTN_BUY'],
 								'MESS_BTN_DETAIL' => $arParams['~MESS_BTN_DETAIL'],
 								'MESS_BTN_SUBSCRIBE' => $arParams['~MESS_BTN_SUBSCRIBE'],
-
 								'PROPERTY_CODE' => $arParams['LIST_PROPERTY_CODE'],
 								'PROPERTY_CODE_MOBILE' => $arParams['LIST_PROPERTY_CODE_MOBILE'],
 								'ADD_PICT_PROP' => $arParams['ADD_PICT_PROP'],
-
 								'OFFERS_FIELD_CODE' => $arParams['LIST_OFFERS_FIELD_CODE'],
 								'OFFERS_PROPERTY_CODE' => $arParams['LIST_OFFERS_PROPERTY_CODE'],
 								'OFFER_TREE_PROPS' => $arParams['OFFER_TREE_PROPS'],
 								'OFFERS_CART_PROPERTIES' => $arParams['OFFERS_CART_PROPERTIES'],
 								'OFFER_ADD_PICT_PROP' => $arParams['OFFER_ADD_PICT_PROP'],
-
 								'HIDE_NOT_AVAILABLE' => 'Y',
 								'HIDE_NOT_AVAILABLE_OFFERS' => 'Y',
 								'PRODUCT_SUBSCRIPTION' => $arParams['PRODUCT_SUBSCRIPTION'],
@@ -281,7 +251,6 @@ if ($isFilter || $isSidebar): ?>
 								'USE_PRODUCT_QUANTITY' => 'N',
 								'PRODUCT_QUANTITY_VARIABLE' => $arParams['PRODUCT_QUANTITY_VARIABLE'],
 								'CACHE_GROUPS' => $arParams['CACHE_GROUPS'],
-
 								'USE_ENHANCED_ECOMMERCE' => (isset($arParams['USE_ENHANCED_ECOMMERCE']) ? $arParams['USE_ENHANCED_ECOMMERCE'] : ''),
 								'DATA_LAYER_NAME' => (isset($arParams['DATA_LAYER_NAME']) ? $arParams['DATA_LAYER_NAME'] : ''),
 								'BRAND_PROPERTY' => (isset($arParams['BRAND_PROPERTY']) ? $arParams['BRAND_PROPERTY'] : ''),
@@ -327,7 +296,6 @@ if ($isFilter || $isSidebar): ?>
 			<div class="sort clearfix">
 			<?
 				/***SORT***/
-
 				// массив значений для выбора сортировки
 				$arAvailableSort = array(
 					//"artnum"	=> Array("PROPERTY_ARTNUMBER", "asc"), /* по умолчанию */
@@ -335,13 +303,11 @@ if ($isFilter || $isSidebar): ?>
 					"price_min" => Array("PROPERTY_MINIMUM_PRICE", "asc"),
 					"price_max" => Array("PROPERTY_MINIMUM_PRICE", "desc"),
 				);
-
 				$firstSortKey = '';
 				foreach($arAvailableSort as $sortKey => $arSort){
 					$firstSortKey = $sortKey;
 					break;
 				}
-
 				$sort = $APPLICATION->get_cookie("sort") ? $APPLICATION->get_cookie("sort") : $arAvailableSort[$firstSortKey][0];
 				$sort_order = $APPLICATION->get_cookie("order") ? $APPLICATION->get_cookie("order") : $arAvailableSort[$firstSortKey][1];
 				if( $_REQUEST["sort"] ) {
@@ -352,7 +318,6 @@ if ($isFilter || $isSidebar): ?>
 						$APPLICATION->set_cookie("order", $sort_order);
 					}
 				}
-
 				?>
 				<div class="sort-item">
 					<?=GetMessage("SECT_SORT_LABEL_FULL")?>
@@ -375,11 +340,9 @@ if ($isFilter || $isSidebar): ?>
 				</script>
 				<div class="sort-line"></div>
 				<?
-
 				/***LIMIT***/
 				$arAvailableLimit = array(16, 32, 64);
 				$limit = $APPLICATION->get_cookie("limit") ? $APPLICATION->get_cookie("limit") : $arAvailableLimit[0];
-
 				if( (int)$_REQUEST["limit"] ) {
 					if ( in_array( $_REQUEST["limit"], $arAvailableLimit ) ) {
 						$limit = (int)$_REQUEST["limit"];
@@ -401,7 +364,6 @@ if ($isFilter || $isSidebar): ?>
 								<?//printvar('',$arAvailableLimit);
 								foreach($arAvailableLimit as $val)
 								{
-
 									?>
 									<li>
 										<a href="<?=$APPLICATION->GetCurPageParam("limit=".$val, array("limit","bxajaxid"))?>"  class="sort-btn<?if($limit==$val) echo ' active';?>" rel="nofollow"><?if($val=="900"): echo GetMessage("SECT_COUNT_ALL"); else: echo '<span>'.$val.'</span>'; endif;?></a>
@@ -442,34 +404,27 @@ if ($isFilter || $isSidebar): ?>
 					array("HIDE_ICONS" => "Y")
 				);
 			}
-
 			$intSectionID = $APPLICATION->IncludeComponent(
 				"bitrix:catalog.section",
 				"",
 				array(
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 					"IBLOCK_ID" => $arParams["IBLOCK_ID"],
-
 					"ITEM_COUNTER" => $itemCounter,
-
 					//"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
 					//"ELEMENT_SORT_ORDER" => $arParams["ELEMENT_SORT_ORDER"],
 					//"ELEMENT_SORT_FIELD2" => $arParams["ELEMENT_SORT_FIELD2"],
 					//"ELEMENT_SORT_ORDER2" => $arParams["ELEMENT_SORT_ORDER2"],
-
 					// "ELEMENT_SORT_FIELD" => $sort,
 					// "ELEMENT_SORT_ORDER" => $sort_order,
 					// "ELEMENT_SORT_FIELD2" => $arParams["ELEMENT_SORT_FIELD"],
 					// "ELEMENT_SORT_ORDER2" => $arParams["ELEMENT_SORT_ORDER"],
-
 					"ELEMENT_SORT_FIELD" => "PROPERTY_HAS_PICTURE",
 					"ELEMENT_SORT_ORDER" => "DESC",
 					"ELEMENT_SORT_FIELD2" => $sort,
 					"ELEMENT_SORT_ORDER2" => $sort_order,
-
 					//"PAGE_ELEMENT_COUNT" => $arParams["PAGE_ELEMENT_COUNT"],
 					"PAGE_ELEMENT_COUNT" => (isset($limit) ? $limit : $arParams["PAGE_ELEMENT_COUNT"]),
-
 					"PROPERTY_CODE" => $arParams["LIST_PROPERTY_CODE"],
 					"PROPERTY_CODE_MOBILE" => $arParams["LIST_PROPERTY_CODE_MOBILE"],
 					"BROWSER_TITLE" => $arParams["LIST_BROWSER_TITLE"],
@@ -502,13 +457,11 @@ if ($isFilter || $isSidebar): ?>
 					"PRICE_CODE" => $arParams["~PRICE_CODE"],
 					"USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
 					"SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
-
 					"PRICE_VAT_INCLUDE" => $arParams["PRICE_VAT_INCLUDE"],
 					"USE_PRODUCT_QUANTITY" => $arParams['USE_PRODUCT_QUANTITY'],
 					"ADD_PROPERTIES_TO_BASKET" => (isset($arParams["ADD_PROPERTIES_TO_BASKET"]) ? $arParams["ADD_PROPERTIES_TO_BASKET"] : ''),
 					"PARTIAL_PRODUCT_PROPERTIES" => (isset($arParams["PARTIAL_PRODUCT_PROPERTIES"]) ? $arParams["PARTIAL_PRODUCT_PROPERTIES"] : ''),
 					"PRODUCT_PROPERTIES" => $arParams["PRODUCT_PROPERTIES"],
-
 					"DISPLAY_TOP_PAGER" => $arParams["DISPLAY_TOP_PAGER"],
 					"DISPLAY_BOTTOM_PAGER" => $arParams["DISPLAY_BOTTOM_PAGER"],
 					"PAGER_TITLE" => $arParams["PAGER_TITLE"],
@@ -523,7 +476,6 @@ if ($isFilter || $isSidebar): ?>
 					"LAZY_LOAD" => $arParams["LAZY_LOAD"],
 					"MESS_BTN_LAZY_LOAD" => $arParams["~MESS_BTN_LAZY_LOAD"],
 					"LOAD_ON_SCROLL" => $arParams["LOAD_ON_SCROLL"],
-
 					"OFFERS_CART_PROPERTIES" => $arParams["OFFERS_CART_PROPERTIES"],
 					"OFFERS_FIELD_CODE" => $arParams["LIST_OFFERS_FIELD_CODE"],
 					"OFFERS_PROPERTY_CODE" => $arParams["LIST_OFFERS_PROPERTY_CODE"],
@@ -532,12 +484,10 @@ if ($isFilter || $isSidebar): ?>
 					"OFFERS_SORT_FIELD2" => $arParams["OFFERS_SORT_FIELD2"],
 					"OFFERS_SORT_ORDER2" => $arParams["OFFERS_SORT_ORDER2"],
 					"OFFERS_LIMIT" => $arParams["LIST_OFFERS_LIMIT"],
-
 					//"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
 				//	"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
 				"SECTION_ID" => $SECTION_ID,
 				"SECTION_CODE" => $SECTION_CODE,
-
 					"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
 					"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
 					"USE_MAIN_ELEMENT_SECTION" => $arParams["USE_MAIN_ELEMENT_SECTION"],
@@ -545,7 +495,6 @@ if ($isFilter || $isSidebar): ?>
 					'CURRENCY_ID' => $arParams['CURRENCY_ID'],
 					'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
 					'HIDE_NOT_AVAILABLE_OFFERS' => $arParams["HIDE_NOT_AVAILABLE_OFFERS"],
-
 					'LABEL_PROP' => $arParams['LABEL_PROP'],
 					'LABEL_PROP_MOBILE' => $arParams['LABEL_PROP_MOBILE'],
 					'LABEL_PROP_POSITION' => $arParams['LABEL_PROP_POSITION'],
@@ -558,7 +507,6 @@ if ($isFilter || $isSidebar): ?>
 					'SHOW_SLIDER' => $arParams['LIST_SHOW_SLIDER'],
 					'SLIDER_INTERVAL' => isset($arParams['LIST_SLIDER_INTERVAL']) ? $arParams['LIST_SLIDER_INTERVAL'] : '',
 					'SLIDER_PROGRESS' => isset($arParams['LIST_SLIDER_PROGRESS']) ? $arParams['LIST_SLIDER_PROGRESS'] : '',
-
 					'OFFER_ADD_PICT_PROP' => $arParams['OFFER_ADD_PICT_PROP'],
 					'OFFER_TREE_PROPS' => $arParams['OFFER_TREE_PROPS'],
 					'PRODUCT_SUBSCRIPTION' => $arParams['PRODUCT_SUBSCRIPTION'],
@@ -576,11 +524,9 @@ if ($isFilter || $isSidebar): ?>
 					'MESS_BTN_DETAIL' => (isset($arParams['~MESS_BTN_DETAIL']) ? $arParams['~MESS_BTN_DETAIL'] : ''),
 					'MESS_NOT_AVAILABLE' => (isset($arParams['~MESS_NOT_AVAILABLE']) ? $arParams['~MESS_NOT_AVAILABLE'] : ''),
 					'MESS_BTN_COMPARE' => (isset($arParams['~MESS_BTN_COMPARE']) ? $arParams['~MESS_BTN_COMPARE'] : ''),
-
 					'USE_ENHANCED_ECOMMERCE' => (isset($arParams['USE_ENHANCED_ECOMMERCE']) ? $arParams['USE_ENHANCED_ECOMMERCE'] : ''),
 					'DATA_LAYER_NAME' => (isset($arParams['DATA_LAYER_NAME']) ? $arParams['DATA_LAYER_NAME'] : ''),
 					'BRAND_PROPERTY' => (isset($arParams['BRAND_PROPERTY']) ? $arParams['BRAND_PROPERTY'] : ''),
-
 					'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : ''),
 					"ADD_SECTIONS_CHAIN" => "N",
 					'ADD_TO_BASKET_ACTION' => $basketAction,
@@ -591,7 +537,6 @@ if ($isFilter || $isSidebar): ?>
 					'BACKGROUND_IMAGE' => (isset($arParams['SECTION_BACKGROUND_IMAGE']) ? $arParams['SECTION_BACKGROUND_IMAGE'] : ''),
 					'COMPATIBLE_MODE' => (isset($arParams['COMPATIBLE_MODE']) ? $arParams['COMPATIBLE_MODE'] : ''),
 					'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : ''),
-
 					'USE_VOTE_RATING' => $arParams['LIST_USE_VOTE_RATING'],
 					'VOTE_DISPLAY_AS_RATING' => (isset($arParams['LIST_VOTE_DISPLAY_AS_RATING']) ? $arParams['LIST_VOTE_DISPLAY_AS_RATING'] : ''),
 					'SEO_FILTER'=>$arSEO
@@ -601,9 +546,7 @@ if ($isFilter || $isSidebar): ?>
 			?>
 		</div>
 		<?
-
 		$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;
-
 		if (ModuleManager::isModuleInstalled("sale"))
 		{
 			if (!empty($arRecomData))
@@ -644,19 +587,16 @@ if ($isFilter || $isSidebar): ?>
 								"PRICE_CODE" => $arParams["~PRICE_CODE"],
 								"USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
 								"SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
-
 								"SET_BROWSER_TITLE" => "N",
 								"SET_META_KEYWORDS" => "N",
 								"SET_META_DESCRIPTION" => "N",
 								"SET_LAST_MODIFIED" => "N",
 								"ADD_SECTIONS_CHAIN" => "N",
-
 								"PRICE_VAT_INCLUDE" => $arParams["PRICE_VAT_INCLUDE"],
 								"USE_PRODUCT_QUANTITY" => $arParams['USE_PRODUCT_QUANTITY'],
 								"ADD_PROPERTIES_TO_BASKET" => (isset($arParams["ADD_PROPERTIES_TO_BASKET"]) ? $arParams["ADD_PROPERTIES_TO_BASKET"] : ''),
 								"PARTIAL_PRODUCT_PROPERTIES" => (isset($arParams["PARTIAL_PRODUCT_PROPERTIES"]) ? $arParams["PARTIAL_PRODUCT_PROPERTIES"] : ''),
 								"PRODUCT_PROPERTIES" => $arParams["PRODUCT_PROPERTIES"],
-
 								"OFFERS_CART_PROPERTIES" => $arParams["OFFERS_CART_PROPERTIES"],
 								"OFFERS_FIELD_CODE" => $arParams["LIST_OFFERS_FIELD_CODE"],
 								"OFFERS_PROPERTY_CODE" => $arParams["LIST_OFFERS_PROPERTY_CODE"],
@@ -665,7 +605,6 @@ if ($isFilter || $isSidebar): ?>
 								"OFFERS_SORT_FIELD2" => $arParams["OFFERS_SORT_FIELD2"],
 								"OFFERS_SORT_ORDER2" => $arParams["OFFERS_SORT_ORDER2"],
 								"OFFERS_LIMIT" => $arParams["LIST_OFFERS_LIMIT"],
-
 								"SECTION_ID" => $intSectionID,
 								"SECTION_CODE" => "",
 								"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
@@ -675,7 +614,6 @@ if ($isFilter || $isSidebar): ?>
 								'CURRENCY_ID' => $arParams['CURRENCY_ID'],
 								'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
 								'HIDE_NOT_AVAILABLE_OFFERS' => $arParams["HIDE_NOT_AVAILABLE_OFFERS"],
-
 								'LABEL_PROP' => $arParams['LABEL_PROP'],
 								'LABEL_PROP_MOBILE' => $arParams['LABEL_PROP_MOBILE'],
 								'LABEL_PROP_POSITION' => $arParams['LABEL_PROP_POSITION'],
@@ -688,14 +626,11 @@ if ($isFilter || $isSidebar): ?>
 								'SHOW_SLIDER' => $arParams['LIST_SHOW_SLIDER'],
 								'SLIDER_INTERVAL' => isset($arParams['LIST_SLIDER_INTERVAL']) ? $arParams['LIST_SLIDER_INTERVAL'] : '',
 								'SLIDER_PROGRESS' => isset($arParams['LIST_SLIDER_PROGRESS']) ? $arParams['LIST_SLIDER_PROGRESS'] : '',
-
 								"DISPLAY_TOP_PAGER" => 'N',
 								"DISPLAY_BOTTOM_PAGER" => 'N',
 								"HIDE_SECTION_DESCRIPTION" => "Y",
-
 								"RCM_TYPE" => isset($arParams['BIG_DATA_RCM_TYPE']) ? $arParams['BIG_DATA_RCM_TYPE'] : '',
 								"SHOW_FROM_SECTION" => 'Y',
-
 								'OFFER_ADD_PICT_PROP' => $arParams['OFFER_ADD_PICT_PROP'],
 								'OFFER_TREE_PROPS' => $arParams['OFFER_TREE_PROPS'],
 								'PRODUCT_SUBSCRIPTION' => $arParams['PRODUCT_SUBSCRIPTION'],
@@ -713,11 +648,9 @@ if ($isFilter || $isSidebar): ?>
 								'MESS_BTN_DETAIL' => (isset($arParams['~MESS_BTN_DETAIL']) ? $arParams['~MESS_BTN_DETAIL'] : ''),
 								'MESS_NOT_AVAILABLE' => (isset($arParams['~MESS_NOT_AVAILABLE']) ? $arParams['~MESS_NOT_AVAILABLE'] : ''),
 								'MESS_BTN_COMPARE' => (isset($arParams['~MESS_BTN_COMPARE']) ? $arParams['~MESS_BTN_COMPARE'] : ''),
-
 								'USE_ENHANCED_ECOMMERCE' => (isset($arParams['USE_ENHANCED_ECOMMERCE']) ? $arParams['USE_ENHANCED_ECOMMERCE'] : ''),
 								'DATA_LAYER_NAME' => (isset($arParams['DATA_LAYER_NAME']) ? $arParams['DATA_LAYER_NAME'] : ''),
 								'BRAND_PROPERTY' => (isset($arParams['BRAND_PROPERTY']) ? $arParams['BRAND_PROPERTY'] : ''),
-
 								'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : ''),
 								'ADD_TO_BASKET_ACTION' => $basketAction,
 								'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
@@ -740,15 +673,10 @@ if ($isFilter || $isSidebar): ?>
 </div>
 
 <?
-
 	$rsResult = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arCurSection), false, $arSelect = array("UF_*"));
-
 	if($arSec = $rsResult->GetNext()) {
-
 		if($arSec['IBLOCK_SECTION_ID']){
 			$rsResultParent = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arSec['IBLOCK_SECTION_ID']), false, $arSelect = array("UF_*"));
-
-
 			if($arSecParent = $rsResultParent -> GetNext()) {
 				$APPLICATION->SetPageProperty("og:title", $arSecParent['UF_OG_TITLE']);
 				$APPLICATION->SetPageProperty("og:description", $arSecParent['UF_OG_DESCRIPTION']);
@@ -758,8 +686,6 @@ if ($isFilter || $isSidebar): ?>
 				$APPLICATION->SetPageProperty("twitter:hashtags", $arSecParent['UF_TWITTER_HASHTAGS']);
 			}
 		}
-
-
 		//printvar('', $arSec['DESCRIPTION']);
 		if($arSec['DESCRIPTION']){
 			?>
@@ -776,110 +702,23 @@ if ($isFilter || $isSidebar): ?>
 		// UF_TWITTER_TITLE
 		// UF_TWITTER_DESCR
 		// UF_TWITTER_HASHTAGS
-
 		$APPLICATION->SetPageProperty("og:title", $arSec['UF_OG_TITLE']);
 		$APPLICATION->SetPageProperty("og:description", $arSec['UF_OG_DESCRIPTION']);
 		$APPLICATION->SetPageProperty("og:image", $arSec['UF_OG_IMAGE']);
 		$APPLICATION->SetPageProperty("twitter:title", $arSec['UF_TWITTER_TITLE']);
 		$APPLICATION->SetPageProperty("twitter:description", $arSec['UF_TWITTER_DESCR']);
 		$APPLICATION->SetPageProperty("twitter:hashtags", $arSec['UF_TWITTER_HASHTAGS']);
-
-
 	}
-
 if ( count($arSEO) ) {
 	$APPLICATION->SetPageProperty('og:title', $arSEO['TITLE_SEO_VALUE']);
 	$APPLICATION->SetPageProperty('og:description', $arSEO['DESCRIPTION_SEO_VALUE']);
 }
 
-
 /*change*/
-
-/*
-
-switch ($arResult['VARIABLES']['SMART_FILTER_PATH']) {
-			case "tipizdeliya-is-kolco/metall-is-zoloto/tsvet_metalla-is-belyj":
-			$resultFields = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => 1, "ID" => 325), false, $arSelect = array("UF_*"));
-			break;
-
-			case "osnovnaya_vstavka-is-izumrud-prirodnyj-uralskij-or-izumrud-gidrotermalnyj/vstavki-is-izumrud-or-izumrud-gidrotermalnyj-or-izumrud*-or-izumrud-gt-or-izumrud-prirodnyj-uralskij":
-			$resultFields = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => 1, "ID" => 326), false, $arSelect = array("UF_*"));
-			break;
-
-}
-if ($resultFields)   {
-	$result=$resultFields -> GetNext();
-
-
-
-
-
-?>
-
-<script type="text/javascript">
-	$('.bx_catalog_text a').text("<?=$result['NAME']?>");
-</script>
-<div class="col-xs-12">
-	<div class="bx-section-desc">
-		<p class="bx-section-desc-post"><?=$result['DESCRIPTION'];?></p>
-	</div>
-</div>
-
-<?
-
-
-	if (count($resultFields)> 0 ) {
-
-		if (strlen($mtitle=$result['UF_BROWSER_TITLE'])>0)
-				$APPLICATION->SetPageProperty("title", $mtitle);
-
-		if (strlen($mkey=$result['UF_KEYWORDS'])>0)
-				$APPLICATION->SetPageProperty("keywords", $mkey);
-
-		if (strlen($mdesc=$result['UF_META_DESCRIPTION'])>0)
-				$APPLICATION->SetPageProperty("description", $mdesc);
-
-
-
-
-
-		if (strlen($ogtitle=$result['UF_OG_TITLE'])>0)
-				$APPLICATION->SetPageProperty("og:title", $ogtitle);
-
-		if (strlen($ogdesc=$result ['UF_OG_DESCRIPTION'])>0)
-		{
-			$APPLICATION->SetPageProperty("og:description", $ogdesc);
-		}
-
-
-		if (strlen($ogimg=$result ['UF_OG_IMAGE'])>0)
-				$APPLICATION->SetPageProperty("og:image", $ogimg);
-
-		if (strlen($twtitle=$result ['UF_TWITTER_TITLE'])>0)
-				$APPLICATION->SetPageProperty("twitter:title", $twtitle);
-
-		if (strlen($twdesc=$result ['UF_TWITTER_DESCR'])>0)
-				$APPLICATION->SetPageProperty("twitter:description", $twdesc);
-
-		if (strlen($twhash=$result ['UF_TWITTER_HASHTAGS'])>0)
-				$APPLICATION->SetPageProperty("twitter:hashtags", $twhash);
-
-		if (strlen($twimg=$result ['UF_TWITTER_IMG'])>0)
-				$APPLICATION->SetPageProperty("twitter:img", $twimg);
-	}
-
-
-
-
-}*/
-
-/*change*/
-
 if ($changeContent) {
-	//$APPLICATION->SetPageProperty("title", "Украшения с изумрудами");
+	
 	$ipropSectionValues = new \Bitrix\Iblock\InheritedProperty\SectionValues(1, $cat_id);
 	$arSEOmain = $ipropSectionValues->getValues();
-
 	if ($arSEOmain['SECTION_META_TITLE'] != false) {
 			$APPLICATION->SetPageProperty("title", $arSEOmain['SECTION_META_TITLE']);
 		}

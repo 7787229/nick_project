@@ -20,3 +20,5 @@ define("MENU_ID", 17);
 define("REPLAY_IBLOCK_ID", 49); // ID инфоблока Отзывы
 
 define("SEO_FILTER_IBLOCK_ID", 57);
+
+define('DEFAULT_DELIVERY_ID', 22);

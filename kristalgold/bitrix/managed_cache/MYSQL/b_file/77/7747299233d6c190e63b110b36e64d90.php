@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001572368201';
+$dateexpire = '001572371801';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{i:1320898;a:14:{s:2:"ID";s:7:"1320898";s:11:"TIMESTAMP_X";s:19:"11.10.2019 10:10:19";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"300";s:5:"WIDTH";s:3:"300";s:9:"FILE_SIZE";s:5:"27436";s:12:"CONTENT_TYPE";s:10:"image/jpeg";s:6:"SUBDIR";s:10:"iblock/fd2";s:9:"FILE_NAME";s:39:"Sergi_pusety_Palladij_500_210201828.JPG";s:13:"ORIGINAL_NAME";s:42:"Sergi-pusety--Palladij---500-210201828.JPG";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"a430fca318d76858b582541a09827d2c";s:4:"~src";b:0;}i:1320899;a:14:{s:2:"ID";s:7:"1320899";s:11:"TIMESTAMP_X";s:19:"11.10.2019 10:10:19";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"560";s:5:"WIDTH";s:3:"560";s:9:"FILE_SIZE";s:5:"74827";s:12:"CONTENT_TYPE";s:10:"image/jpeg";s:6:"SUBDIR";s:10:"iblock/beb";s:9:"FILE_NAME";s:39:"Sergi_pusety_Palladij_500_210201828.JPG";s:13:"ORIGINAL_NAME";s:42:"Sergi-pusety--Palladij---500-210201828.JPG";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"a430fca318d76858b582541a09827d2c";s:4:"~src";b:0;}}}';
+return true;
+?>

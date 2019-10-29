@@ -1,0 +1,70 @@
+body {background:#FFF;font-family:Verdana, Helvetica, Arial, sans-serif;margin:0;padding:0}
+
+#underconstruction {background:#FFF;width:650px; margin-top:50px auto;padding:15px;position:relative;}
+* html body  div#logo img {text-align: center;}
+div#logo { text-align: center;  border: 0px; margin-top:50px; }
+h2#title { text-align:center; margin-top: 0px;margin-bottom: 20px;}
+
+
+
+.wrap-pbar {border: 4px solid #21B6FF;}
+.pbar .ui-progressbar-value {display:block !important;}
+.pbar {overflow: hidden;
+	border-radius: 10px;
+	height: 70px;
+	border: 1px solid #000;
+    box-shadow: 0px 5px 10px #ccc;
+}
+
+.ui-progressbar { width: 650px !important;}
+#progress-bar { width: 650px; text-align: center; margin: 0 auto !important;}
+
+.ui-progressbar-value{
+    background-color: #21B6FF;
+}
+.percent {    
+	color: rgba(0, 0, 0, 0.78);
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 34px;
+    left: 25px;
+    position: relative;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    top: 12px;
+    top: -55px;
+    left: 20px;
+}
+.wrap-elapsed {width: 650px;  }
+.elapsed,.elapsed2 {     font-size: 60px;    position: relative;    text-align: center;    width: 600px;    margin-left: 70px; }
+.elapsed div.digit, .elapsed2 div.digit, .digit-last  {    
+    border: 1px solid #000;    float: left;    height: 80px;    min-width: 100px;    padding-top: 10px;    padding-bottom: 10px; 
+    display: inline;
+    background-color: #FFF;    
+    box-shadow: 0 5px 10px #CCCCCC;
+    color: #000;
+   }
+
+#days { padding-left: 20px;}
+#hours { padding-left: 137px;}
+#minutes {padding-left: 245px;}
+#seconds {padding-left: 365px;}
+
+.digit-after {    
+    background-image: url("../images/dots.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 27px;
+    width: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 35px;
+}
+
+.notes{     position: absolute;    left: 10px;    top: 120px; font-size: 18px; color: #777;}
+#info { text-align: center; }
+.clear-fix { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+p#contacts { position: fixed;  left: 20px;   bottom: 10px;     font-size: 12px;}
+a#enter {    position: fixed;  right: 20px;  bottom: 20px;}
+a#enter img { border: 0px;}

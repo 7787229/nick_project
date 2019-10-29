@@ -1,0 +1,8 @@
+.counter .block {
+	behavior: url(/bitrix/themes/.default/burbon.siteclose/simple/css/PIE.htc);
+	background: #fff;
+}
+
+#wrap {
+	behavior: url(/bitrix/themes/.default/burbon.siteclose/simple/css/PIE.htc);
+}

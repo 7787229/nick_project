@@ -1,0 +1,28 @@
+2017-06-19 10:07:06 - Host: mag.uvelirsoft.ru:80 - LOW_PRIORITY_ERROR - [ErrorException] E_USER_WARNING
+Cache engine is not found (0)
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#0: trigger_error(string, integer)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:115
+#1: Bitrix\Main\Data\Cache::createCacheEngine()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/cache.php:141
+#2: Bitrix\Main\Data\Cache::createInstance()
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/data/managedcache.php:49
+#3: Bitrix\Main\Data\ManagedCache->read(integer, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:217
+#4: Bitrix\Main\Config\Option::load(string, NULL)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/config/option.php:53
+#5: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:337
+#6: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httprequest.php:63
+#7: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/httpapplication.php:42
+#8: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/lib/application.php:122
+#9: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include.php:23
+#10: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/main/include/prolog_before.php:14
+#11: require_once(string)
+	/var/www/html/domains/mag.uvelirsoft.ru/bitrix/components/bitrix/pull.request/ajax.php:10
+----------

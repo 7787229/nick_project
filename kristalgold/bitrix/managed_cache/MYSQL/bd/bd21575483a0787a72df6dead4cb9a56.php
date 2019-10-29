@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001572369484';
+$dateexpire = '001572405484';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:7:{s:12:"backup_files";a:6:{s:31:"20191027_020156_22867241.enc.gz";s:10:"1076739650";s:33:"20191027_020156_22867241.enc.gz.1";s:9:"721813666";s:31:"20191028_020231_56656420.enc.gz";s:10:"1074648122";s:33:"20191028_020231_56656420.enc.gz.1";s:9:"721697456";s:31:"20191029_020341_80402340.enc.gz";s:10:"1074890507";s:33:"20191029_020341_80402340.enc.gz.1";s:9:"721743492";}s:23:"backup_last_backup_time";a:1:{i:0;s:10:"1572303821";}s:12:"backup_quota";a:1:{i:0;s:11:"10737418240";}s:17:"backup_total_size";a:1:{i:0;s:10:"5391532893";}s:22:"monitoring_expire_time";a:1:{i:0;s:10:"1572382682";}s:17:"monitoring_result";a:1:{i:0;s:15:"kristallgold.ru";}s:19:"monitoring_result_0";a:3:{s:23:"test_http_response_time";s:158:"a:4:{s:6:"status";s:5:"green";s:4:"time";i:1568342197;s:6:"uptime";s:13:"604800/604800";s:6:"result";s:48:"time=0.096633s;;20.000000;0.000000 size=445B;;;0";}";s:8:"test_lic";s:120:"a:4:{s:6:"status";s:5:"green";s:4:"time";i:1572317166;s:6:"uptime";s:13:"604800/604800";s:6:"result";s:10:"1581195600";}";s:6:"vt_bkp";s:97:"a:4:{s:6:"status";s:5:"green";s:4:"time";i:1572293976;s:6:"uptime";s:0:"";s:6:"result";s:2:"OK";}";}}}';
+return true;
+?>

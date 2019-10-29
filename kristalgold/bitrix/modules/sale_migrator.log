@@ -1,0 +1,72 @@
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => Start
+    [1] => Step DiscountCatalogMigratorrun
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => Start
+    [1] => Step DiscountCatalogMigratormoveDiscounts
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => finished
+    [1] => Step DiscountCatalogMigratormoveDiscounts
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => Start
+    [1] => Step DiscountCatalogMigratormoveCoupons
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => finished
+    [1] => Step DiscountCatalogMigratormoveCoupons
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => Start
+    [1] => Step DiscountCatalogMigratorfillShortDescription
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => finished
+    [1] => Step DiscountCatalogMigratorfillShortDescription
+    [2] => 
+)
+
+
+Date:Thu, 25 May 2017 09:46:04 +0300
+Array
+(
+    [0] => finished
+    [1] => Step DiscountCatalogMigratorrun
+    [2] => 
+)
+
+

@@ -1,0 +1,2 @@
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/modules/burbon.siteclose/install/themes/simple/css/PIE.php	[600] strange include
+/var/www/html/domains/mag.uvelirsoft.ru/bitrix/themes/.default/burbon.siteclose/simple/css/PIE.php	[600] strange include

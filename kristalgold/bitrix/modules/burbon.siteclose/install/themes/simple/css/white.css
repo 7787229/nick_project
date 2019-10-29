@@ -1,0 +1,40 @@
+body {
+	color: #9f9f9f;
+}
+
+#wrap {
+	background: url("../images/white.png") repeat 0 0;
+}
+
+.description {
+	background: #f6f6f6;
+	color: #1b2439;
+}
+
+.info .phone {
+	color: #363637;
+}
+
+.counter .block .value {
+	color: #1b2439;
+}
+
+.enter span {
+	color: #9f9f9f;
+}
+
+.enter:hover span {
+	color: #595959;
+}
+
+.enter:active span {
+	color: #000;
+}
+
+.enter .hint {
+	color: #7b7b7b;
+}
+
+.enter .img {
+	background-image: url("../images/enter_white.png");
+}

@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'century_gothicregular', Arial, sans-serif;
+	font-size: 16px;
+	background: #fff;
+	min-width: 1000px;
+}
+
+.br {
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+}
+
+:focus {
+	outline: none;
+}
+
+a img {
+	border: none;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #d04b44;
+}
+
+
+#wrap {
+	min-height: 100%;
+}
+
+.content {
+	width: 720px;
+	margin: 0 auto;
+	padding-top: 75px;
+	padding-bottom: 50px;
+}
+
+.logo {
+	margin-bottom: 23px;
+	text-align: center;
+	position: relative;
+	padding: 0 50px;
+	min-height: 64px;
+}
+
+.enter {
+	position: absolute;
+	right: 0;
+	top: 25px;
+	background-position: 0 0;
+	cursor: pointer;
+	cursor: hand;
+	color: #fff;
+	font-size: 12px;
+
+	-moz-transition: all 0.3s;
+	-webkit-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition: all 0.3s;
+}
+
+.enter a {
+display: block;
+padding-top: 22px;
+text-decoration: none;
+}
+
+.enter span {
+	text-decoration: underline;
+}
+
+.enter .img {
+	position: absolute;
+	width: 22px;
+	height: 15px;
+	top: 0;
+	left: 5px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.enter:hover .img {
+	background-position: 0 -15px;
+}
+
+.enter:active .img {
+	background-position: 0 -30px;
+}
+
+.enter .hint {
+	position: absolute;
+	right: -20px;
+	top: 100%;
+	background: url("../images/hint.png");
+	width: 278px;
+	height: 44px;
+	padding: 23px 9px 10px 9px;
+	line-height: 44px;
+	text-align: center;
+	z-index: 5;
+	cursor: default;
+	display: none;
+}
+
+.enter:hover .hint {
+	display: block;
+}
+
+.counter {
+	margin-bottom: 40px;
+	margin-left: -9px;
+	height: 147px;
+}
+
+.counter .block {
+	width: 171px;
+	height: 145px;
+	float: left;
+	margin-left: 9px;
+	border: 1px solid #e7e7e7;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNmY2ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(51%,rgba(255,255,255,1)), color-stop(51%,rgba(246,246,246,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(246,246,246,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(246,246,246,1) 51%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(246,246,246,1) 51%,rgba(246,246,246,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 51%,rgba(246,246,246,1) 51%,rgba(246,246,246,1) 100%); /* W3C */
+}
+
+.counter .block .text {
+	font-size: 22px;
+	font-family: 'franklin_gothic_demi_condRg';
+	color: #9f9f9f;
+	text-transform: uppercase;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+.counter .block .value {
+	font-family: 'franklin_gothic_demi_condRg';
+	font-size: 90px;
+	line-height: 80px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.description {
+	padding: 12px 15px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 16px;
+}
+
+.info {
+	width: 370px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.info .phone {
+	font-size: 24px;
+	color: #fefdfd;
+	font-weight: bold;
+	margin-bottom: 4px;
+}

@@ -1,0 +1,103 @@
+Array
+(
+    [ID] => 50458
+    [IBLOCK_ID] => 2
+    [IBLOCK_SECTION_ID] => 
+    [NAME] => Кольцо, Золото - 585 (1 Изумруд Кб 10.0 2/К2 3.747ct) ШК: 3000000076996
+    [PREVIEW_PICTURE] => 0
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_PICTURE] => 0
+    [DETAIL_PAGE_URL] => /magazin/koltso-zoloto-585-50457/
+    [LANG_DIR] => /
+    [CODE] => koltso-zoloto-585-1-izumrud-kb-10-0-2-k2-3-747ct-shk-3000000076996
+    [EXTERNAL_ID] => 7b40befa-f4a0-11e9-859c-00304864a11c#3000000076996#17.5
+    [IBLOCK_TYPE_ID] => catalog
+    [IBLOCK_CODE] => catalog_s1
+    [IBLOCK_EXTERNAL_ID] => catalog_s1#
+    [LID] => s1
+    [AVAILABLE] => Y
+    [TYPE] => 4
+    [VAT_ID] => 3
+    [VAT_INCLUDED] => Y
+    [PARENT_ID] => 50457
+    [PROPERTIES] => Array
+        (
+            [426] => Array
+                (
+                    [ID] => 426
+                    [PROPERTY_TYPE] => L
+                    [MULTIPLE] => Y
+                    [USER_TYPE] => 
+                    [VALUE_ENUM] => Array
+                        (
+                            [0] => Изумруд
+                        )
+
+                    [VALUE_XML_ID] => Array
+                        (
+                            [0] => izumrud
+                        )
+
+                    [VALUE_SORT] => Array
+                        (
+                            [0] => 2000
+                        )
+
+                    [VALUE] => Array
+                        (
+                            [0] => Изумруд
+                        )
+
+                    [PROPERTY_VALUE_ID] => Array
+                        (
+                            [0] => 6253476
+                        )
+
+                    [VALUE_ENUM_ID] => Array
+                        (
+                            [0] => 12057
+                        )
+
+                    [DESCRIPTION] => Array
+                        (
+                            [0] => 
+                        )
+
+                    [~VALUE] => Array
+                        (
+                            [0] => Изумруд
+                        )
+
+                    [~DESCRIPTION] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+        )
+
+    [PRICES] => Array
+        (
+            [1] => Array
+                (
+                    [ID] => 49986
+                    [PRODUCT_ID] => 50458
+                    [CATALOG_GROUP_ID] => 1
+                    [PRICE] => 29800.00
+                    [CURRENCY] => RUB
+                )
+
+        )
+
+    [PICTURE] => 
+    [DESCRIPTION] => 
+    [RESULT_PRICE] => Array
+        (
+            [MIN_PRICE] => 29800
+            [FULL_PRICE] => 29800
+            [CURRENCY] => RUB
+        )
+
+)

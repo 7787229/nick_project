@@ -8,8 +8,8 @@
                 <div class="title">Будьте в курсе наших новостей и скидок!</div>
 				<div class="sender-container">
 	                <?$APPLICATION->IncludeComponent(
-	"bitrix:sender.subscribe",
-	".default",
+	"bitrix:sender.subscribe", 
+	".default", 
 	array(
 		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -68,8 +68,8 @@
 			<div class="col-md-6 hidden-sm hidden-xs">
 				<div class="item_footer">
 					<?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"bottom_catalog",
+	"bitrix:menu", 
+	"bottom_catalog", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "bottom_catalog",

@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001572367291';
+$dateexpire = '001572370891';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{i:314711;a:14:{s:2:"ID";s:6:"314711";s:11:"TIMESTAMP_X";s:19:"01.08.2019 11:21:18";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"300";s:5:"WIDTH";s:3:"300";s:9:"FILE_SIZE";s:5:"10875";s:12:"CONTENT_TYPE";s:10:"image/jpeg";s:6:"SUBDIR";s:10:"iblock/0b2";s:9:"FILE_NAME";s:42:"Stolovoe_serebro_Serebro_875_120701680.JPG";s:13:"ORIGINAL_NAME";s:45:"Stolovoe-serebro--Serebro---875-120701680.JPG";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"3b3c3477e460df7110d5d5616fdc7ce2";s:4:"~src";b:0;}i:314712;a:14:{s:2:"ID";s:6:"314712";s:11:"TIMESTAMP_X";s:19:"01.08.2019 11:21:18";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"560";s:5:"WIDTH";s:3:"560";s:9:"FILE_SIZE";s:5:"30845";s:12:"CONTENT_TYPE";s:10:"image/jpeg";s:6:"SUBDIR";s:10:"iblock/d3d";s:9:"FILE_NAME";s:42:"Stolovoe_serebro_Serebro_875_120701680.JPG";s:13:"ORIGINAL_NAME";s:45:"Stolovoe-serebro--Serebro---875-120701680.JPG";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"3b3c3477e460df7110d5d5616fdc7ce2";s:4:"~src";b:0;}}}';
+return true;
+?>

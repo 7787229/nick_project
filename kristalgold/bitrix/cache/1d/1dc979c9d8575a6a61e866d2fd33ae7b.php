@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001572350126';
+$dateexpire = '001572393326';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:3:"SEL";a:1:{i:0;a:8:{s:10:"PRODUCT_ID";s:5:"36914";s:4:"NAME";s:56:"Сувенир, Серебро - 925 ШК: 2000000066851";s:14:"CATALOG_XML_ID";s:11:"catalog_s1#";s:14:"PRODUCT_XML_ID";s:51:"a48e3490-8825-11e9-8502-00304864a11c#2000000066851#";s:5:"PRICE";s:9:"1267.0000";s:9:"AVG_PRICE";s:13:"1267.00000000";s:8:"QUANTITY";s:6:"1.0000";s:8:"CURRENCY";s:3:"RUB";}}s:6:"VIEWED";a:4:{i:0;a:6:{s:10:"ELEMENT_ID";s:5:"28209";s:10:"PRODUCT_ID";s:5:"35504";s:10:"VIEW_COUNT";s:3:"119";s:4:"NAME";s:34:"Серьги, Серебро - 925";s:5:"PRICE";s:7:"4900.00";s:8:"CURRENCY";s:3:"RUB";}i:1;a:6:{s:10:"ELEMENT_ID";s:5:"31099";s:10:"PRODUCT_ID";s:5:"47179";s:10:"VIEW_COUNT";s:2:"77";s:4:"NAME";s:34:"Кольцо, Серебро - 925";s:5:"PRICE";s:7:"1900.00";s:8:"CURRENCY";s:3:"RUB";}i:2;a:6:{s:10:"ELEMENT_ID";s:5:"28253";s:10:"PRODUCT_ID";s:5:"29654";s:10:"VIEW_COUNT";s:2:"72";s:4:"NAME";s:34:"Кольцо, Серебро - 925";s:5:"PRICE";s:6:"990.00";s:8:"CURRENCY";s:3:"RUB";}i:3;a:6:{s:10:"ELEMENT_ID";s:5:"28461";s:10:"PRODUCT_ID";s:5:"40103";s:10:"VIEW_COUNT";s:2:"58";s:4:"NAME";s:34:"Кольцо, Серебро - 925";s:5:"PRICE";s:7:"1900.00";s:8:"CURRENCY";s:3:"RUB";}}}}';
+return true;
+?>

@@ -1,0 +1,103 @@
+Array
+(
+    [ID] => 44532
+    [IBLOCK_ID] => 2
+    [IBLOCK_SECTION_ID] => 
+    [NAME] => Запонки, Серебро - 925 (2 Изм Овал.Кб.-3,25 1/2 ) ШК: 2000000140841
+    [PREVIEW_PICTURE] => 0
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_PICTURE] => 0
+    [DETAIL_PAGE_URL] => /magazin/zaponki-serebro-925-43289/
+    [LANG_DIR] => /
+    [CODE] => zaponki-serebro-925-2-izm-oval-kb-3-25-1-2-shk-2000000140841
+    [EXTERNAL_ID] => 404f38a2-b20b-11e9-9280-00215ad000e6#2000000140841#
+    [IBLOCK_TYPE_ID] => catalog
+    [IBLOCK_CODE] => catalog_s1
+    [IBLOCK_EXTERNAL_ID] => catalog_s1#
+    [LID] => s1
+    [AVAILABLE] => Y
+    [TYPE] => 4
+    [VAT_ID] => 2
+    [VAT_INCLUDED] => Y
+    [PARENT_ID] => 43289
+    [PROPERTIES] => Array
+        (
+            [426] => Array
+                (
+                    [ID] => 426
+                    [PROPERTY_TYPE] => L
+                    [MULTIPLE] => Y
+                    [USER_TYPE] => 
+                    [VALUE_ENUM] => Array
+                        (
+                            [0] => Изумруд природный уральский
+                        )
+
+                    [VALUE_XML_ID] => Array
+                        (
+                            [0] => izumrud-prirodnyj-uralskij
+                        )
+
+                    [VALUE_SORT] => Array
+                        (
+                            [0] => 5400
+                        )
+
+                    [VALUE] => Array
+                        (
+                            [0] => Изумруд природный уральский
+                        )
+
+                    [PROPERTY_VALUE_ID] => Array
+                        (
+                            [0] => 6235905
+                        )
+
+                    [VALUE_ENUM_ID] => Array
+                        (
+                            [0] => 22711
+                        )
+
+                    [DESCRIPTION] => Array
+                        (
+                            [0] => 
+                        )
+
+                    [~VALUE] => Array
+                        (
+                            [0] => Изумруд природный уральский
+                        )
+
+                    [~DESCRIPTION] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+        )
+
+    [PRICES] => Array
+        (
+            [1] => Array
+                (
+                    [ID] => 43665
+                    [PRODUCT_ID] => 44532
+                    [CATALOG_GROUP_ID] => 1
+                    [PRICE] => 14900.00
+                    [CURRENCY] => RUB
+                )
+
+        )
+
+    [PICTURE] => 
+    [DESCRIPTION] => 
+    [RESULT_PRICE] => Array
+        (
+            [MIN_PRICE] => 14900
+            [FULL_PRICE] => 14900
+            [CURRENCY] => RUB
+        )
+
+)

@@ -1,0 +1,113 @@
+<? $disableReferers = false;
+if (!isset($_GET["referer1"]) || strlen($_GET["referer1"])<=0) $_GET["referer1"] = "yandext";
+$strReferer1 = htmlspecialchars($_GET["referer1"]);
+if (!isset($_GET["referer2"]) || strlen($_GET["referer2"]) <= 0) $_GET["referer2"] = "";
+$strReferer2 = htmlspecialchars($_GET["referer2"]);
+header("Content-Type: text/xml; charset=windows-1251");
+echo "<"."?xml version=\"1.0\" encoding=\"windows-1251\"?".">"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2019-10-29 20:24">
+<shop>
+<name>ЮД Кристалл мечты</name>
+<company>ЮД Кристалл мечты</company>
+<url>https://kristallgold.ru</url>
+<platform>1C-Bitrix</platform>
+<currencies>
+<currency id="RUB" rate="1" />
+</currencies>
+<categories>
+<category id="2">Каталог</category>
+<category id="135" parentId="2">Кольца</category>
+<category id="233" parentId="135">Кольца из белого золота</category>
+<category id="234" parentId="135">Кольца из палладия</category>
+<category id="235" parentId="135">Кольца с александритом</category>
+<category id="236" parentId="135">Кольца с аметистом</category>
+<category id="237" parentId="135">Кольца с бериллом</category>
+<category id="238" parentId="135">Кольца с гранатом</category>
+<category id="239" parentId="135">Кольца с кубиками циркония</category>
+<category id="240" parentId="135">Кольца с рубином</category>
+<category id="241" parentId="135">Кольца с раухтопазом</category>
+<category id="242" parentId="135">Кольца с танзанитом</category>
+<category id="243" parentId="135">Кольца с топазом</category>
+<category id="244" parentId="135">Кольца с турмалином</category>
+<category id="245" parentId="135">Кольца с фенакитом</category>
+<category id="246" parentId="135">Кольца с хризолитом</category>
+<category id="247" parentId="135">Кольца с цитрином</category>
+<category id="248" parentId="135">Кольца с аквамарином</category>
+<category id="249" parentId="135">Кольца с бриллиантами</category>
+<category id="250" parentId="135">Кольца с изумрудами</category>
+<category id="251" parentId="135">Кольца с сапфирами</category>
+<category id="252" parentId="135">Кольца с жемчугом</category>
+<category id="253" parentId="135">Серебряные кольца</category>
+<category id="254" parentId="135">Золотые кольца</category>
+<category id="255" parentId="135">Золотые кольца с изумрудами</category>
+<category id="256" parentId="135">Серебряные кольца с изумрудами</category>
+<category id="257" parentId="135">Золотые кольца с александритами</category>
+<category id="136" parentId="2">Серьги</category>
+<category id="258" parentId="136">Серьги с изумрудами</category>
+<category id="259" parentId="136">Серьги с сапфирами</category>
+<category id="260" parentId="136">Серьги с бриллиантами</category>
+<category id="261" parentId="136">Серьги с бериллом</category>
+<category id="262" parentId="136">Серьги с бирюзой</category>
+<category id="263" parentId="136">Серьги с гранатом</category>
+<category id="264" parentId="136">Серьги с жемчугом</category>
+<category id="265" parentId="136">Серьги с цирконием</category>
+<category id="266" parentId="136">Серьги с раухтопазом</category>
+<category id="267" parentId="136">Серьги с рубином</category>
+<category id="268" parentId="136">Серьги с танзанитом</category>
+<category id="269" parentId="136">Серьги с топазом</category>
+<category id="270" parentId="136">Серьги с турмалином</category>
+<category id="271" parentId="136">Серьги с фенакитом</category>
+<category id="272" parentId="136">Серьги с хризолитом</category>
+<category id="273" parentId="136">Серьги с цитрином</category>
+<category id="274" parentId="136">Серьги со шпинелем</category>
+<category id="275" parentId="136">Золотые серьги</category>
+<category id="276" parentId="136">Серебряные серьги</category>
+<category id="277" parentId="136">Серьги из палладия</category>
+<category id="278" parentId="136">Серьги с аквамарином</category>
+<category id="279" parentId="136">Серьги с александритом</category>
+<category id="280" parentId="136">Серьги с аметистом</category>
+<category id="281" parentId="136">Золотые серьги с изумрудами</category>
+<category id="282" parentId="136">Серебряные серьги с изумрудом</category>
+<category id="283" parentId="136">Золотые серьги с александритами</category>
+<category id="317" parentId="136">Серьги-пусеты</category>
+<category id="137" parentId="2">Подвески</category>
+<category id="284" parentId="137">Подвески с изумрудами</category>
+<category id="285" parentId="137">Подвески с аквамарином</category>
+<category id="286" parentId="137">Золотые подвески</category>
+<category id="287" parentId="137">Серебряные подвески</category>
+<category id="288" parentId="137">Подвески из палладия</category>
+<category id="289" parentId="137">Подвески с бериллом</category>
+<category id="290" parentId="137">Подвески с бриллиантами</category>
+<category id="291" parentId="137">Подвески с гранатом</category>
+<category id="292" parentId="137">Подвески с жемчугом</category>
+<category id="293" parentId="137">Подвески с цирконием</category>
+<category id="294" parentId="137">Подвески с сапфиром</category>
+<category id="295" parentId="137">Подвески с танзанитом</category>
+<category id="296" parentId="137">Подвески с топазом</category>
+<category id="297" parentId="137">Золотые подвески с изумрудами</category>
+<category id="138" parentId="2">Все товары</category>
+<category id="229" parentId="2">Колье</category>
+<category id="298" parentId="229">Колье с сапфирами</category>
+<category id="299" parentId="229">Колье с изумрудами</category>
+<category id="300" parentId="229">Золотые колье</category>
+<category id="301" parentId="229">Серебряные колье</category>
+<category id="302" parentId="229">Золотые колье с изумрудами</category>
+<category id="230" parentId="2">Сувениры</category>
+<category id="231" parentId="2">Украшения с александритами</category>
+<category id="228" parentId="2">Под заказ</category>
+<category id="325" parentId="2">Украшения с изумрудами</category>
+<category id="303" parentId="2">Распродажа</category>
+<category id="304" parentId="2">Броши</category>
+<category id="306" parentId="304">Броши с изумрудами</category>
+<category id="307" parentId="304">Броши с бриллиантами</category>
+<category id="308" parentId="304">Золотые броши</category>
+<category id="309" parentId="304">Серебряные броши</category>
+<category id="310" parentId="304">Золотые броши с изумрудами</category>
+<category id="305" parentId="2">Браслеты</category>
+<category id="311" parentId="305">Браслеты с изумрудами</category>
+<category id="312" parentId="305">Браслеты с сапфирами</category>
+<category id="313" parentId="305">Браслеты с топазами</category>
+<category id="314" parentId="305">Золотые браслеты</category>
+<category id="315" parentId="305">Серебряные браслеты</category>
+<category id="316" parentId="305">Золотые браслеты с изумрудами</category>
