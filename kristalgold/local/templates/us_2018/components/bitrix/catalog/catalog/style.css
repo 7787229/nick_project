@@ -58,3 +58,20 @@ body.bx-theme-blue .catalog-block-header{border-color:#006cc0;}
 body.bx-theme-green .catalog-block-header{border-color:#63aa28;}
 body.bx-theme-red .catalog-block-header{border-color:#da3737;}
 body.bx-theme-yellow .catalog-block-header{border-color:#f4b236;}
+
+.change_availeble {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.change_availeble span.bx-filter-input-checkbox {
+    padding-right: 10px;
+		position: relative;
+		color: #459e80;
+		font-weight: normal;
+}
+
+.change_availeble .bx-filter-input-checkbox span:before {
+	position: absolute;
+	right: -25px;
+}

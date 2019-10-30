@@ -18,6 +18,7 @@ else
 {
 	$basketAction = isset($arParams['SECTION_ADD_TO_BASKET_ACTION']) ? $arParams['SECTION_ADD_TO_BASKET_ACTION'] : '';
 }
+
 $changeContent=false;
 switch ($arResult["VARIABLES"]["SECTION_ID"]) {
 			case 325:
@@ -328,14 +329,45 @@ if ($isFilter || $isSidebar): ?>
 					<?endforeach;?>
 					</select>
 				</div>
+				<div class="change_availeble">
+
+				<!--	<input type="checkbox" name="HIDE_NOT_AVAILABLE" <?=($_COOKIE["hide_not_available"]=="Y" ? "checked" :"")?> value="Y" id="catalog_available">
+					<label for="catalog_available">В наличии</label>-->
+					<label for="catalog_available">
+						<span class="bx-filter-input-checkbox">
+
+							<input type="checkbox" name="HIDE_NOT_AVAILABLE" <?=($_COOKIE["hide_not_available"]=="Y" ? "checked" :"")?> value="Y" id="catalog_available">
+								<span class="bx-filter-param-text" title="В наличии">В наличии</span>
+						</span>
+					</label>
+
+
+				</div>
+				<?php
+						$HIDE_NOT_AVAILABLE='N';
+						if($_COOKIE["hide_not_available"]=="Y"){
+							$HIDE_NOT_AVAILABLE='Y';
+						}
+				 ?>
+				 <script src="https://cdn.jsdelivr.net/npm/jquery.cookie-consent/dist/jquery.cookie-consent.min.js"></script>
 				<script type="text/javascript">
 					$( document ).ready(function() {
+
 						$('#w0-filter-sortable').change(function(){
 							if ( url = $('#w0-filter-sortable :selected').attr('data-url') ) {
 								window.location.href = url;
 								return false;
 							}
 						});
+ 							$("#catalog_available").change(function(e){
+ 								if($(this).is(":checked")){
+ 										// window.location.href = '?HIDE_NOT_AVAILABLE=Y';
+ 										$.cookie("hide_not_available","Y");
+ 								} else {
+ 										$.cookie("hide_not_available","N");
+ 								}
+ 								location.reload();
+ 							});
 					});
 				</script>
 				<div class="sort-line"></div>
@@ -493,7 +525,7 @@ if ($isFilter || $isSidebar): ?>
 					"USE_MAIN_ELEMENT_SECTION" => $arParams["USE_MAIN_ELEMENT_SECTION"],
 					'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
 					'CURRENCY_ID' => $arParams['CURRENCY_ID'],
-					'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
+					'HIDE_NOT_AVAILABLE' => $HIDE_NOT_AVAILABLE,
 					'HIDE_NOT_AVAILABLE_OFFERS' => $arParams["HIDE_NOT_AVAILABLE_OFFERS"],
 					'LABEL_PROP' => $arParams['LABEL_PROP'],
 					'LABEL_PROP_MOBILE' => $arParams['LABEL_PROP_MOBILE'],
@@ -716,7 +748,7 @@ if ( count($arSEO) ) {
 
 /*change*/
 if ($changeContent) {
-	
+
 	$ipropSectionValues = new \Bitrix\Iblock\InheritedProperty\SectionValues(1, $cat_id);
 	$arSEOmain = $ipropSectionValues->getValues();
 	if ($arSEOmain['SECTION_META_TITLE'] != false) {
