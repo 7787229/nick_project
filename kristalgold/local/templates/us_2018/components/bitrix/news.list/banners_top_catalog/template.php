@@ -1,4 +1,4 @@
-<div class="view_all_catalog">
+<div class="view_all_catalog test1">
 	<a href="/magazin/catalog/">Посмотреть весь каталог</a>
 </div>
 
