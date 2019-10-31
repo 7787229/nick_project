@@ -26,33 +26,7 @@ IncludeTemplateLangFile(__FILE__);
         CJSCore::Init(array("ajax", "window"));
         ?>
 
-        <!-- <?$APPLICATION->IncludeComponent(
-        	"uvelirsoft:admin.panel",
-        	"",
-        	Array(
-        		"COMPONENT_TEMPLATE" => ".default"
-        	)
-        );?> -->
 
-        <?/*
-        // user authorization and registration
-        if(!$USER->IsAuthorized()){
-        	require_once($_SERVER['DOCUMENT_ROOT'].DEFAULT_TEMPLATE.'/include/login.php');
-        	require_once($_SERVER['DOCUMENT_ROOT'].DEFAULT_TEMPLATE.'/include/registration.php');
-            ?>
-            <script>
-        		$(document).ready(function() {
-        			$('#auth_form .close_form').bind('click',function(){
-        				$('#auth_form').modal('toggle');
-        			});
-        			$('#registration .close_form').bind('click',function(){
-        				$('#registration').modal('toggle');
-        			});
-        		});
-            </script>
-            <?
-        }
-        */?>
         <!-- <div id="auth_and_register__container"></div> -->
         <?
         if(!$USER->IsAuthorized()){
