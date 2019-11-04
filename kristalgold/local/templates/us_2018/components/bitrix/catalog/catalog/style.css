@@ -75,3 +75,10 @@ body.bx-theme-yellow .catalog-block-header{border-color:#f4b236;}
 	position: absolute;
 	right: -25px;
 }
+
+div#modef.left {
+	 right: 103%;
+ }
+div#modef a {
+	text-transform: uppercase;
+}
