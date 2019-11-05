@@ -1707,6 +1707,7 @@ if (empty($arRunErrors))
 										continue;
 
 									$itemsContent .= "<name>".yandex_text2xml($offer['NAME'], true)."</name>\n";
+                                    $itemsContent .= "<model>".yandex_text2xml($offer['NAME'], true)."</model>\n";
 									$itemsContent .= "<sales_notes>"."Доставка от 500 рублей"."</sales_notes>\n";
 									$itemsContent .= "<vendor>"."Кристалл Мечты"."</vendor>\n";
 									break;
