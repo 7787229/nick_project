@@ -852,8 +852,34 @@ if (isset($templateData['TEMPLATE_THEME']))
 			</div>
 			<div class="clb"></div>
 		</form>
+        <div class="wr-apply-filter" style="display: none;">
+            <button>Отфильтровать</button>
+        </div>
 	</div>
 </div>
+
+<script>
+
+    $('form.smartfilter').click(function(){
+
+
+                $('.wr-apply-filter').css('display','block');
+
+
+    });
+
+
+        $('.wr-apply-filter button').click(function () {
+
+            if($('#modef a').attr('href')!=="<?=$arResult['FORM_ACTION']?>"){
+                location=$('#modef a').attr('href');
+            }
+        });
+
+
+
+</script>
+
 <script>
 	var smartFilter = new JCSmartFilter('<?echo CUtil::JSEscape($arResult["FORM_ACTION"])?>', '<?=CUtil::JSEscape($arParams["FILTER_VIEW_MODE"])?>', <?=CUtil::PhpToJSObject($arResult["JS_FILTER_PARAMS"])?>);
 </script>

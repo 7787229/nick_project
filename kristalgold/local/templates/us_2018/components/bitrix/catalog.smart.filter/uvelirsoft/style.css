@@ -769,3 +769,15 @@ COLOR
 label.bx-filter-param-label.disabled, .filter-option.modified p.disabled, .bx-filter-parameters-box.disabled {
     display: none;
 }
+.wr-apply-filter button{
+	padding: 15px;
+	border: 1px solid;
+	text-transform: uppercase;
+	font-size: 120%;
+	background: #459e80;
+	color: white;
+}
+.wr-apply-filter {
+	text-align: center;
+	margin-top: 20px;
+}
