@@ -51,7 +51,7 @@ if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
 	?><h1
 		class="<? echo $arCurView['TITLE']; ?>"
 		id="<? echo $this->GetEditAreaId($arResult['SECTION']['ID']); ?>"
-	><a href="<? echo $arResult['SECTION']['SECTION_PAGE_URL']; ?>"><?
+	><?
 		echo (
 			( 
 				isset($arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"]) && $arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"] != ""
@@ -59,7 +59,7 @@ if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
 				: $arResult['SECTION']['NAME']
 			)
 		);
-	?></a></h1><?
+	?></h1><?
 }
 
 if ( $arParams["SEO_FILTER"]["CONTENT_VALUE"]) {
