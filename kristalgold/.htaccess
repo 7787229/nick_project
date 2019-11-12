@@ -1,4 +1,6 @@
-Options -Indexes 
+Redirect 301 /magazin/catalog/sergi/s-izymrddydom/ https://www.incognitoweb.ru/magazin/catalog/sergi/sergi-s-izumrudami/
+Redirect 301 /magazin/catalog/rings/s-izymrydom/ https://www.incognitoweb.ru/magazin/catalog/rings/koltsa-s-izumrudami/
+Options -Indexes
 ErrorDocument 404 /404.php
 
 <IfModule mod_php5.c>

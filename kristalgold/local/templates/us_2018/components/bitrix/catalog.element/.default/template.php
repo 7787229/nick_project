@@ -453,7 +453,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 												if (!empty($arResult['DISPLAY_PROPERTIES']))
 												{
 													?>
-													<div class="product-item-detail-properties">
+													<div itemprop="description" class="product-item-detail-properties">
 														<?
 														foreach ($arResult['DISPLAY_PROPERTIES'] as $property)
 														{
@@ -1672,8 +1672,11 @@ if ($haveOffers)
 		}
 
 		$offerPrice = $offer['ITEM_PRICES'][$offer['ITEM_PRICE_SELECTED']];
+
 		?>
+       
 		<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <meta itemprop="url" content="<?=SITE_SERVER_NAME.$arResult['DETAIL_PAGE_URL']?>" />
 			<meta itemprop="sku" content="<?=htmlspecialcharsbx(implode('/', $currentOffersList))?>" />
 			<meta itemprop="price" content="<?=$offerPrice['RATIO_PRICE']?>" />
 			<meta itemprop="priceCurrency" content="<?=$offerPrice['CURRENCY']?>" />
