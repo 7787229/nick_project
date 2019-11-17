@@ -526,6 +526,7 @@ if ($isFilter || $isSidebar): ?>
 					'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
 					'CURRENCY_ID' => $arParams['CURRENCY_ID'],
 					'HIDE_NOT_AVAILABLE' => $HIDE_NOT_AVAILABLE,
+                    //'HIDE_NOT_AVAILABLE' => $arParams['HIDE_NOT_AVAILABLE'],
 					'HIDE_NOT_AVAILABLE_OFFERS' => $arParams["HIDE_NOT_AVAILABLE_OFFERS"],
 					'LABEL_PROP' => $arParams['LABEL_PROP'],
 					'LABEL_PROP_MOBILE' => $arParams['LABEL_PROP_MOBILE'],
@@ -740,6 +741,7 @@ if ($isFilter || $isSidebar): ?>
 		$APPLICATION->SetPageProperty("twitter:title", $arSec['UF_TWITTER_TITLE']);
 		$APPLICATION->SetPageProperty("twitter:description", $arSec['UF_TWITTER_DESCR']);
 		$APPLICATION->SetPageProperty("twitter:hashtags", $arSec['UF_TWITTER_HASHTAGS']);
+        $APPLICATION->SetPageProperty("twitter:image", $arSec['UF_TWITTER_IMG']);
 	}
 if ( count($arSEO) ) {
 	$APPLICATION->SetPageProperty('og:title', $arSEO['TITLE_SEO_VALUE']);
