@@ -309,8 +309,10 @@ if ($isFilter || $isSidebar): ?>
 					$firstSortKey = $sortKey;
 					break;
 				}
-				$sort = $APPLICATION->get_cookie("sort") ? $APPLICATION->get_cookie("sort") : $arAvailableSort[$firstSortKey][0];
-				$sort_order = $APPLICATION->get_cookie("order") ? $APPLICATION->get_cookie("order") : $arAvailableSort[$firstSortKey][1];
+				//$sort = $APPLICATION->get_cookie("sort") ? $APPLICATION->get_cookie("sort") : $arAvailableSort[$firstSortKey][0];
+				//$sort_order = $APPLICATION->get_cookie("order") ? $APPLICATION->get_cookie("order") : $arAvailableSort[$firstSortKey][1];
+            $sort = 'PROPERTY_MINIMUM_PRICE';
+            $sort_order = 'asc';
 				if( $_REQUEST["sort"] ) {
 					if ( $val = $arAvailableSort[$_REQUEST["sort"]] ) {
 						$sort = $val[0];
