@@ -1,6 +1,3 @@
-
-
-
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main\Localization\Loc;
@@ -639,7 +636,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 						case 'price':
 						?>
 						<div class="product-item-detail-info-container">
-							<div class="price_vals">
+							<div class="price_vals ">
 								<?
 									if ($arParams['SHOW_OLD_PRICE'] === 'Y')
 									{
@@ -657,10 +654,11 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 
 							</div>
 							<div class="btn-block-sale">
-								<button id="sale-on-ckick" type="button" name="button">Купить в 1 клик</button>
+
+								<button id="sale-on-ckick" class="<?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?>" type="button" name="button">Купить в 1 клик</button>
 
 
-	                    <a class="btn-cart-sale btn btn-default product-item-detail-buy-button" id="<?=$itemIds['ADD_BASKET_LINK']?>" href="javascript:void(0);">
+	                    <a class="btn-cart-sale btn btn-default product-item-detail-buy-button <?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?>" id="<?=$itemIds['ADD_BASKET_LINK']?>" href="javascript:void(0);">
 	                      <span>В корзину</span>
 	                    </a>
 							</div>
@@ -916,7 +914,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 
 							<?if($arResult['NEED_ORDER_PRODUCT'] == 'Y'){?>
 								<div class="product-item-detail-info-container">
-									<a href='javascript:void(0);' class='btn btn-link product-item-detail-buy-button btn_orderInOneClick' onclick='showPopupOrderProduct();'>Заказать товар</a>
+									<a href='javascript:void(0);' class="<?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?> btn btn-link product-item-detail-buy-button btn_orderInOneClick" onclick='showPopupOrderProduct();'>Заказать товар</a>
 								</div>
 							<?}?>
 							<?
