@@ -331,7 +331,14 @@ if ($isFilter || $isSidebar): ?>
 					<?endforeach;?>
 					</select>
 				</div>
-				<div class="change_availeble">
+                <?
+                $hidden='';
+                if($arResult["VARIABLES"]["SECTION_ID"]==228) $hidden='hidden';
+
+
+
+                ?>
+				<div class="change_availeble <?=$hidden?>">
 
 				<!--	<input type="checkbox" name="HIDE_NOT_AVAILABLE" <?=($_COOKIE["hide_not_available"]=="Y" ? "checked" :"")?> value="Y" id="catalog_available">
 					<label for="catalog_available">В наличии</label>-->
