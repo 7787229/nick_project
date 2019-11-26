@@ -75,10 +75,30 @@ body.bx-theme-yellow .catalog-block-header{border-color:#f4b236;}
 	position: absolute;
 	right: -25px;
 }
-
 div#modef.left {
 	 right: 103%;
  }
 div#modef a {
 	text-transform: uppercase;
+}
+
+.bx-filter .bx-filter-popup-result.left {
+    border-width: 2px 2px 2px 10px !important;
+    -o-border-image: url(/local/templates/us_2018/components/bitrix/catalog.smart.filter/uvelirsoft/images/result_popup_right.png) 4 4 4 20 repeat !important;
+    border-image: url(/local/templates/us_2018/components/bitrix/catalog.smart.filter/uvelirsoft/images/result_popup_right.png) 4 4 4 20 fill repeat !important;
+    left: 60% !important;
+    right: initial !important;
+}
+
+.bx-filter .bx-filter-popup-result.right {
+    left: 60% !important;
+}
+
+ul.cat-cat, ul.product-cat {
+	padding-left: 0;
+	list-style-type: none;
+	margin-top: 70px;
+}
+ul.product-cat{
+	margin-top: 0;
 }

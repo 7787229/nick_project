@@ -156,7 +156,7 @@ if ($isFilter || $isSidebar): ?>
 		<?endif?>
 	</div>
 <?endif?>
-<div class="<?=(($isFilter || $isSidebar) ? "col-md-9 col-sm-8" : "col-xs-12")?> catalog_main">
+<div class="<?=(($isFilter || $isSidebar) ? "col-md-7 col-sm-6" : "col-xs-12")?> catalog_main">
 	<div class="row">
 		<div class="col-xs-12">
 			<?
@@ -714,6 +714,27 @@ if ($isFilter || $isSidebar): ?>
 	</div>
 </div>
 
+<div class="col-md-2 col-sm-2">
+    <ul  class="cat-cat mobile_hide">
+        <?php
+
+        $arSections = getSectionList(
+            Array(
+                'IBLOCK_ID' => 1
+            ),
+            Array(
+                'NAME',
+                'SECTION_PAGE_URL'
+            )
+        )['CHILDS'][2]['CHILDS'];
+
+        foreach ($arSections as $sec)
+        {
+            ?>
+            <li class=""><a href="<?=$sec['SECTION_PAGE_URL']?>" ><?=$sec['NAME']?></a></li>
+        <?php }?>
+    </ul>
+</div>
 <?
 	$rsResult = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arCurSection), false, $arSelect = array("UF_*"));
 	if($arSec = $rsResult->GetNext()) {

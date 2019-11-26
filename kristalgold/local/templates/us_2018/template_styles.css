@@ -2020,4 +2020,12 @@ button#sale-on-ckick, .btn-cart-sale {
 .foot_mail{
   margin-top: 15px;
 }
+
+@media screen and (max-width: 767px) {
+    .main_menu li {
+
+        height: auto;
+
+    }
+}
 /*changed*/

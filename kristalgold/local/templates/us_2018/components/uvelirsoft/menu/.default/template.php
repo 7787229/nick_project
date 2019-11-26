@@ -17,15 +17,27 @@
                     ){?>
                         <?
                         if($arParams["MENU_POSITION"] == "RIGHT"):?>
-                                <li class="desctop_hide"><a href="/magazin/">КАТАЛОГ</a></li>
-                                <ul class="mob-cat">
+                                <li class="desctop_hide show_cat"><a >КАТАЛОГ</a>
+                                <ul style="display: none" class="mob-cat desctop_hide">
                                     <?php
-                            foreach ($arResult as $section) {
-                                    print_r($section);
-                            }
 
-                                        ?>
+                                    $arSections = getSectionList(
+                                        Array(
+                                            'IBLOCK_ID' => 1
+                                        ),
+                                        Array(
+                                            'NAME',
+                                            'SECTION_PAGE_URL'
+                                        )
+                                    )['CHILDS'][2]['CHILDS'];
+
+                                    foreach ($arSections as $sec)
+                                    {
+                                    ?>
+                                        <li class="desctop_hide"><a href="<?=$sec['SECTION_PAGE_URL']?>" ><?=$sec['NAME']?></a></li>
+                                   <?php }?>
                                 </ul>
+                                </li>
                                 <li class="desctop_hide"><a href="/new/" >Новости</a></li>
                                 <li class="desctop_hide"><a href="/o-kompanii/">О компании</a></li>
                                 <li class="desctop_hide"><a href="/o-kompanii/comments/">Отзывы</a></li>

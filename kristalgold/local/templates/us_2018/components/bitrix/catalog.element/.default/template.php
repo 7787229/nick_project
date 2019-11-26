@@ -177,7 +177,28 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 	itemscope itemtype="http://schema.org/Product">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6 col-sm-12">
+            <div class="col-md-2 col-sm-12">
+                <ul  class="product-cat mobile_hide">
+                    <?php
+
+                    $arSections = getSectionList(
+                        Array(
+                            'IBLOCK_ID' => 1
+                        ),
+                        Array(
+                            'NAME',
+                            'SECTION_PAGE_URL'
+                        )
+                    )['CHILDS'][2]['CHILDS'];
+
+                    foreach ($arSections as $sec)
+                    {
+                        ?>
+                        <li class=""><a href="<?=$sec['SECTION_PAGE_URL']?>" ><?=$sec['NAME']?></a></li>
+                    <?php }?>
+                </ul>
+            </div>
+			<div class="col-md-5 col-sm-12">
 				<div class="product-item-detail-slider-container" id="<?=$itemIds['BIG_SLIDER_ID']?>">
 					<span class="product-item-detail-slider-close" data-entity="close-popup"></span>
 					<div class="product-item-detail-slider-block
@@ -323,7 +344,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-5 col-sm-12">
 				<?
 				if ($arParams['DISPLAY_NAME'] === 'Y')
 				{
@@ -636,7 +657,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 						case 'price':
 						?>
 						<div class="product-item-detail-info-container">
-							<div class="price_vals ">
+							<div class="price_vals <?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?>">
 								<?
 									if ($arParams['SHOW_OLD_PRICE'] === 'Y')
 									{
@@ -914,7 +935,11 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 
 							<?if($arResult['NEED_ORDER_PRODUCT'] == 'Y'){?>
 								<div class="product-item-detail-info-container">
-									<a href='javascript:void(0);' class="<?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?> btn btn-link product-item-detail-buy-button btn_orderInOneClick" onclick='showPopupOrderProduct();'>Заказать товар</a>
+                                    <div class="label-product-item-detail-info-container">
+                                        Данного изделия сейчас нет в наличии, но оно доступно для производства на заказ.
+                                    </div>
+                                    <br>
+									<a href='javascript:void(0);' class="btn btn-link product-item-detail-buy-button btn_orderInOneClick" onclick='showPopupOrderProduct();'>Заказать товар</a>
 								</div>
 							<?}?>
 							<?

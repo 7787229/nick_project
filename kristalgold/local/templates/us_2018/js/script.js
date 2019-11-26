@@ -51,6 +51,13 @@ $(document).ready(function(){
 	// 	}
 	// });
 	/* вывод попапа с авторизацией-регистрацией */
+
+
+    /*change*/
+    $('.show_cat').click(function () {
+        $(this).find('.mob-cat').toggle();
+    });
+    /*change*/
 });
 
 
