@@ -636,7 +636,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 						case 'price':
 						?>
 						<div class="product-item-detail-info-container">
-							<div class="price_vals <?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?>">
+							<div class="price_vals ">
 								<?
 									if ($arParams['SHOW_OLD_PRICE'] === 'Y')
 									{
@@ -914,11 +914,7 @@ $APPLICATION->SetPageProperty("twitter:image",'http://kristallgold.ru/upload/'.$
 
 							<?if($arResult['NEED_ORDER_PRODUCT'] == 'Y'){?>
 								<div class="product-item-detail-info-container">
-                                    <div class="label-product-item-detail-info-container">
-                                        Данного изделия сейчас нет в наличии, но оно доступно для производства на заказ.
-                                    </div>
-                                    <br>
-									<a href='javascript:void(0);' class="btn btn-link product-item-detail-buy-button btn_orderInOneClick" onclick='showPopupOrderProduct();'>Заказать товар</a>
+									<a href='javascript:void(0);' class="<?=($arResult['IBLOCK_SECTION_ID']=='228' ? 'hidden' :'')?> btn btn-link product-item-detail-buy-button btn_orderInOneClick" onclick='showPopupOrderProduct();'>Заказать товар</a>
 								</div>
 							<?}?>
 							<?

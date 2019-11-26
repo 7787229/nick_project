@@ -18,6 +18,14 @@
                         <?
                         if($arParams["MENU_POSITION"] == "RIGHT"):?>
                                 <li class="desctop_hide"><a href="/magazin/">КАТАЛОГ</a></li>
+                                <ul class="mob-cat">
+                                    <?php
+                            foreach ($arResult as $section) {
+                                    print_r($section);
+                            }
+
+                                        ?>
+                                </ul>
                                 <li class="desctop_hide"><a href="/new/" >Новости</a></li>
                                 <li class="desctop_hide"><a href="/o-kompanii/">О компании</a></li>
                                 <li class="desctop_hide"><a href="/o-kompanii/comments/">Отзывы</a></li>
