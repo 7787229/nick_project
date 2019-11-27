@@ -56,6 +56,8 @@ $(document).ready(function(){
     /*change*/
     $('.show_cat').click(function () {
         $(this).find('.mob-cat').toggle();
+        $('li.desctop_hide.show_cat > a').toggleClass('deg-180')
+
     });
     /*change*/
 });

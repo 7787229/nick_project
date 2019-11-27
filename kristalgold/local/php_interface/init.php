@@ -43,6 +43,7 @@ function getSectionList($filter, $select)
     while( $arSection = $dbSection-> GetNext(true, false) ){
 
         $SID = $arSection['ID'];
+        if($SID==138) continue;
         $PSID = (int) $arSection['IBLOCK_SECTION_ID'];
 
         $arLincs[$PSID]['CHILDS'][$SID] = $arSection;

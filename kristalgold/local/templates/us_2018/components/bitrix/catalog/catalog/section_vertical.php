@@ -715,25 +715,22 @@ if ($isFilter || $isSidebar): ?>
 </div>
 
 <div class="col-md-2 col-sm-2">
+    <nav>
     <ul  class="cat-cat mobile_hide">
-        <?php
-
-        $arSections = getSectionList(
-            Array(
-                'IBLOCK_ID' => 1
-            ),
-            Array(
-                'NAME',
-                'SECTION_PAGE_URL'
-            )
-        )['CHILDS'][2]['CHILDS'];
-
-        foreach ($arSections as $sec)
-        {
-            ?>
-            <li class=""><a href="<?=$sec['SECTION_PAGE_URL']?>" ><?=$sec['NAME']?></a></li>
-        <?php }?>
+        <li class=""><a href="/magazin/catalog/vse-tovary/">Весь каталог</a></li>
+        <li class=""><a href="/magazin/catalog/rings/">Кольца</a></li>
+        <li class=""><a href="/magazin/catalog/sergi/">Серьги</a></li>
+        <li class=""><a href="/magazin/catalog/pendants/">Подвески</a></li>
+        <li class=""><a href="/magazin/catalog/kole/">Колье</a></li>
+        <li class=""><a href="/magazin/catalog/suveniry/">Сувениры</a></li>
+        <li class=""><a href="/magazin/catalog/broshi/">Броши</a></li>
+        <li class=""><a href="/magazin/catalog/braslety/">Браслеты</a></li>
+        <li class=""><a href="/magazin/catalog/pod-zakaz/">Под заказ</a></li>
+        <li class=""><a href="/magazin/catalog/ukrasheniya-s-aleksandritami/">Украшения с александритами</a></li>
+        <li class=""><a href="/magazin/catalog/ukrasheniya-s-izumrudami/">Украшения с изумрудами</a></li>
+        <li class=""><a href="/magazin/catalog/rasprodazha/">Распродажа</a></li>
     </ul>
+    </nav>
 </div>
 <?
 	$rsResult = CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $arParams['IBLOCK_ID'], "ID" => $arCurSection), false, $arSelect = array("UF_*"));
