@@ -182,11 +182,12 @@ if (isset($templateData['TEMPLATE_THEME']))
                                                         border:none!important;
                                                     }
                                                 </style>
-                                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 bx-filter-parameters-box <?=($disabledFlag ? 'disabled' : '');?> bx-active">
+                <div class="section-filter <?=$arItem['CODE']?>  <?=($arItem['NAME'] =='Вставки' ? 'vstavki' : '')?> <?if ($arParams["FILTER_VIEW_MODE"] == "HORIZONTAL"):?>col-sm-6 col-md-4<?else:?>col-lg-12<?endif?> bx-filter-parameters-box <?=($disabledFlag ? 'disabled' : '');?> <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>bx-active<?endif?>">
+
                                             <?
                                         }else{
                                             ?>
-                                                <div class="<?if ($arParams["FILTER_VIEW_MODE"] == "HORIZONTAL"):?>col-sm-6 col-md-4<?else:?>col-lg-12<?endif?> bx-filter-parameters-box <?=($disabledFlag ? 'disabled' : '');?> <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>bx-active<?endif?>">
+                                                <div class="section-filter <?=$arItem['CODE']?>  <?=($arItem['NAME'] =='Вставки' ? 'vstavki' : '')?> <?if ($arParams["FILTER_VIEW_MODE"] == "HORIZONTAL"):?>col-sm-6 col-md-4<?else:?>col-lg-12<?endif?> bx-filter-parameters-box <?=($disabledFlag ? 'disabled' : '');?> <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>bx-active<?endif?>">
                                             <?
                                         }
                                         ?>
@@ -221,7 +222,7 @@ if (isset($templateData['TEMPLATE_THEME']))
 
 							// если на мобильном, делаем все элементы выпадающим списком
 							if($isMobile && !in_array($arItem['CODE'],$modFieldsNoTitle)){
-								$arItem["DISPLAY_TYPE"] = "P";
+								//$arItem["DISPLAY_TYPE"] = "P";
 							}
 
 
@@ -642,6 +643,7 @@ if (isset($templateData['TEMPLATE_THEME']))
 											array('HIDE_ICONS' => 'Y')
 										);?>
 									</div></div>
+
 									<?
 									break;
 								default://CHECKBOXES
@@ -650,11 +652,16 @@ if (isset($templateData['TEMPLATE_THEME']))
 
 									$i = 0;
 									$hideArea = false;
+
+
 									foreach($arItem["VALUES"] as $val => $ar):?>
 										<div class="checkbox<?=($hideArea==true ? ' prop_'.$ar['CONTROL_NAME_ALT']:'')?>"<?=($hideArea==true ? ' style="display:none;"':'')?>>
 											<label data-role="label_<?=$ar["CONTROL_ID"]?>" class="bx-filter-param-label <? echo $ar["DISABLED"] ? 'disabled': '' ?>" for="<? echo $ar["CONTROL_ID"] ?>">
 												<span class="bx-filter-input-checkbox">
-													<input
+                                                    <input name="filter_url" type="hidden" value="<?=$arResult["FILTER_URL"]?>">
+                                                    <input name="name_group_filter" type="hidden" value="<?=$arItem['CODE']?>">
+                                                    <input name="name_filter" type="hidden" value="<?=$ar['URL_ID']?>">
+													<input class="click_filter"
 														type="checkbox"
 														value="<? echo $ar["HTML_VALUE"] ?>"
 														name="<? echo $ar["CONTROL_NAME"] ?>"
@@ -684,6 +691,86 @@ if (isset($templateData['TEMPLATE_THEME']))
 										?>
 
 									<?endforeach;?>
+
+                                <?
+                                if($arItem["NAME"] =="Вставки" ){
+
+
+                                ?>
+
+                                <script>
+
+
+                                    var filter_url =$(document).find('[name = filter_url]').eq(0).val();
+
+                                    function simpleFilter(blockClassElement,heading, newClassElement, newClassFilter, filterUrl){
+
+                                        var checkboxes =$(document.getElementsByClassName(blockClassElement)).find('.checkbox');
+                                        var contextElements = [];
+                                        for(var i=0; i<checkboxes.length; i++){
+                                            var txt= $(checkboxes[i]).find('.bx-filter-param-text').text();
+                                           // console.log(txt);
+                                            if (txt.search(heading)!=-1) {
+                                                contextElements[i]=checkboxes[i];
+                                                console.log(contextElements[i]);
+                                                $(contextElements[i]).css('display','none');
+                                            }
+
+                                        }
+                                        var newElement = $(checkboxes[1]).clone();
+                                        newElement.addClass(newClassElement).css("display","block");
+                                        if(filter_url.search(filterUrl)!==-1){
+                                            $(newElement).find(".click_filter").attr("checked","checked");
+                                        }
+                                        newElement.appendTo("."+blockClassElement+" .bx-filter-parameters-box-container");
+
+
+                                        $(newElement).find(".click_filter").click(function (e) {
+                                            $(this).attr("checked","checked");
+                                            for (var i=0; i<$(contextElements).length;i++){
+                                                $(contextElements[i]).find(".click_filter").click();
+                                            }
+
+                                        }).attr("id",newClassFilter).attr("name",newClassFilter);
+
+                                        $(newElement).find(".bx-filter-param-text").text(heading).attr("title",heading);
+                                        $(newElement).find("label").attr("for",newClassFilter);
+                                        $(newElement).find("label").attr("data-role",newClassFilter);
+                                    }
+
+                                    simpleFilter("vstavki","Изумруд","newIzumrud","newIzumrudFilter","izumrud");
+                                    simpleFilter("vstavki","Фенакит","newFenakit","newFenakitFilter","fenakit");
+                                    simpleFilter("vstavki","Агат","newAgat","newAgatFilter","agat");
+                                    simpleFilter("vstavki","Аквамарин","newakvamarin","newakvamarinFilter","akvamarin");
+                                    simpleFilter("Александрит","newaleksandrit","newaleksandritFilter","aleksandrit");
+                                    simpleFilter("vstavki","Бирюза","newbiryuza","newbiryuzaFilter","biryuza");
+                                    simpleFilter("vstavki","Гранат","newgranat","newgranatFilter","granat");
+                                    simpleFilter("vstavki","Жемчуг","newzhemchug","newzhemchugFilter","zhemchug");
+                                    simpleFilter("vstavki","Кварц","newkvarc","newkvarcFilter","kvarc");
+                                    simpleFilter("vstavki","Коралл","newkorall","newkorallFilter","korall");
+                                    simpleFilter("vstavki","Лазурит","newlazurit","newlazuritFilter","lazurit");
+                                    simpleFilter("vstavki","Сапфир","newsapfir","newsapfirFilter","sapfir");
+                                    simpleFilter("vstavki","Топаз","newtopaz","newtopazFilter","topaz");
+                                    simpleFilter("vstavki","Флогопит","newflogopit","newflogopitFilter","flogopit");
+                                    simpleFilter("vstavki","Хризолит","newxrizolit","newxrizolitFilter","xrizolit");
+
+                                    simpleFilter("TIPIZDELIYA","Берилл","newBeril","newBerilFilter","berill");
+                                    simpleFilter("TIPIZDELIYA","Браслет","newBraslet","newBrasletFilter","braslet");
+                                    simpleFilter("TIPIZDELIYA","Кольцо","newKoltso","newKoltsoFilter","kolco");
+                                    simpleFilter("TIPIZDELIYA","Серьги","newserdi","newSergiFilter","sergi");
+                                    simpleFilter("TIPIZDELIYA","Сотуар","newSotuar","newSotuarFilter","sotuar");
+                                    simpleFilter("TIPIZDELIYA","Четки","newChetki","newChetkiFilter","chetki");
+
+
+
+
+
+                                   
+
+                                </script>
+
+                                <?}?>
+
 							<?
 							}
 							?>

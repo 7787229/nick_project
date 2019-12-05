@@ -103,24 +103,8 @@ ul.product-cat{
 	margin-top: 0;
 }
 
-li.desctop_hide.show_cat > a{
-	position: relative;
-}
-li.desctop_hide.show_cat > a :after {
-	left: 90px;
-	position: absolute;
-	top: -7px;
-	content: '+';
-	width: 10px;
-	height: 10px;
-}
 
 
-
-
-.deg-180 i:after{
-	content: '-' !important;
-}
 
 ul.cat-cat.mobile_hide li, ul.product-cat.mobile_hide li {
 	padding: 4px;
@@ -128,3 +112,23 @@ ul.cat-cat.mobile_hide li, ul.product-cat.mobile_hide li {
 	text-align: center;
 	margin-top: 5px;
 }
+
+.section-filter.OSNOVNAYA_VSTAVKA {
+	display:none;
+}
+
+.section-filter.PROBA{
+	display:none;
+}
+
+.section-filter.KOLLEKTSIYA_DLYA_SAYTA {
+	display:none;
+}
+
+.section-filter.RAZMER {
+	display: none;
+}
+.product-item-label-text.product-item-label-small.product-item-label-top.product-item-label-right {
+	display: none !important;
+}
+
