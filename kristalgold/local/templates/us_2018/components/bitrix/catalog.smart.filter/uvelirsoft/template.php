@@ -770,6 +770,12 @@ if (isset($templateData['TEMPLATE_THEME']))
 
                                         $(".wr-show-allfilters").hide();
 
+                                        $(".section-filter.OSNOVNAYA_VSTAVKA").show();
+                                        $(".section-filter.PROBA").show();
+                                        $(".section-filter.KOLLEKTSIYA_DLYA_SAYTA").show();
+                                        $(".section-filter.RAZMER").show();
+
+
                                     });
                                 </script>
                                 <?}?>
