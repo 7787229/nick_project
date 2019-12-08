@@ -693,7 +693,7 @@ if (isset($templateData['TEMPLATE_THEME']))
 									<?endforeach;?>
 
                                 <?
-                                if($arItem["NAME"] =="Вставки" ){
+                                if($arItem["NAME"] =="Вставки"  ){
 
 
                                 ?>
@@ -712,13 +712,13 @@ if (isset($templateData['TEMPLATE_THEME']))
                                            // console.log(txt);
                                             if (txt.search(heading)!=-1) {
                                                 contextElements[i]=checkboxes[i];
-                                                console.log(contextElements[i]);
                                                 $(contextElements[i]).css('display','none');
+                                                $(contextElements[i]).addClass("oldFilter");
                                             }
 
                                         }
                                         var newElement = $(checkboxes[1]).clone();
-                                        newElement.addClass(newClassElement).css("display","block");
+                                        newElement.addClass(newClassElement).addClass("newFilter").css("display","block");
                                         if(filter_url.search(filterUrl)!==-1){
                                             $(newElement).find(".click_filter").attr("checked","checked");
                                         }
@@ -762,13 +762,16 @@ if (isset($templateData['TEMPLATE_THEME']))
                                     simpleFilter("TIPIZDELIYA","Четки","newChetki","newChetkiFilter","chetki");
 
 
+                                    $(".bx-filter-section.container-fluid").append('<div class="wr-show-allfilters"><button id="showAllFilters">Расширенный фильтр</button></div>');
 
+                                    $("#showAllFilters").click(function () {
+                                        $(".newFilter").hide();
+                                        $(".oldFilter").show();
 
+                                        $(".wr-show-allfilters").hide();
 
-                                   
-
+                                    });
                                 </script>
-
                                 <?}?>
 
 							<?

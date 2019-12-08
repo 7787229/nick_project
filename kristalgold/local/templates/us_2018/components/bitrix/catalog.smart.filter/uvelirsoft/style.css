@@ -781,3 +781,25 @@ label.bx-filter-param-label.disabled, .filter-option.modified p.disabled, .bx-fi
 	text-align: center;
 	margin-top: 20px;
 }
+.wr-show-allfilters {
+	display: flex;
+	/* text-align: center; */
+	justify-content: center;
+}
+
+.wr-show-allfilters button {
+
+	padding: 15px;
+	border: 1px solid;
+	text-transform: uppercase;
+	font-size: 120%;
+	background: #459e80;
+	color: white;
+	width: 190px;
+	font-size: 14px;
+	display: block;
+	height: 55px;
+	margin-right: 5px;
+	margin-top: 15px;
+}
+
