@@ -11,7 +11,6 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-
 $tmp_modFields = explode(",",COption::GetOptionString("uvelirsoft", "CATALOG_FILTER_FIELDS_MOD"));
 // зачистим пробелы
 foreach ($tmp_modFields as $arField) {
@@ -707,23 +706,30 @@ if (isset($templateData['TEMPLATE_THEME']))
 
                                         var checkboxes =$(document.getElementsByClassName(blockClassElement)).find('.checkbox');
                                         var contextElements = [];
+                                        var newElement = $(checkboxes[0]).clone();
+                                        var countContextElements=0;
                                         for(var i=0; i<checkboxes.length; i++){
                                             var txt= $(checkboxes[i]).find('.bx-filter-param-text').text();
                                            // console.log(txt);
                                             if (txt.search(heading)!=-1) {
+                                                countContextElements++;
                                                 contextElements[i]=checkboxes[i];
                                                 $(contextElements[i]).css('display','none');
                                                 $(contextElements[i]).addClass("oldFilter");
                                             }
 
                                         }
-                                        var newElement = $(checkboxes[1]).clone();
-                                        newElement.addClass(newClassElement).addClass("newFilter").css("display","block");
-                                        if(filter_url.search(filterUrl)!==-1){
-                                            $(newElement).find(".click_filter").attr("checked","checked");
-                                        }
-                                        newElement.appendTo("."+blockClassElement+" .bx-filter-parameters-box-container");
+                                        if (countContextElements==0) return false;
 
+                                        newElement.addClass(newClassElement).addClass("newFilter").css("display","block");
+
+                                        if(filter_url.search("-is-"+filterUrl)!==-1  || filter_url.search("-or-"+filterUrl)!==-1 ){
+
+                                            $(newElement).find(".click_filter").attr("checked","checked");
+                                        } else {
+                                            $(newElement).find(".click_filter").removeAttr("checked");
+                                        }
+                                         newElement.appendTo("."+blockClassElement+" .bx-filter-parameters-box-container");
 
                                         $(newElement).find(".click_filter").click(function (e) {
                                             $(this).attr("checked","checked");

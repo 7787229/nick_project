@@ -803,3 +803,6 @@ label.bx-filter-param-label.disabled, .filter-option.modified p.disabled, .bx-fi
 	margin-top: 15px;
 }
 
+.bx-filter-parameters-box-container {
+	padding-top: 5px;
+}
