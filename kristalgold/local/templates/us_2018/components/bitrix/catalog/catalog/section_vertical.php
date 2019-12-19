@@ -132,7 +132,7 @@ if ($isFilter || $isSidebar): ?>
 					$component,
 					array('HIDE_ICONS' => 'Y')
 				);
-			//	echo $arResult["VARIABLES"]["SMART_FILTER_PATH"].'<br>';
+
 				?>
 			</div>
 		<? endif ?>
@@ -345,7 +345,7 @@ if ($isFilter || $isSidebar): ?>
 					<label for="catalog_available">
 						<span class="bx-filter-input-checkbox">
 
-							<input type="checkbox" name="HIDE_NOT_AVAILABLE" <?=($_COOKIE["hide_not_available"]=="Y" ? "checked" :"")?> value="Y" id="catalog_available">
+							<input type="checkbox" name="HIDE_NOT_AVAILABLE" <?=(isset($_GET["hide_not_available"]) ? "checked" :"")?> value="Y" id="catalog_available">
 								<span class="bx-filter-param-text" title="В наличии">В наличии</span>
 						</span>
 					</label>
@@ -354,7 +354,7 @@ if ($isFilter || $isSidebar): ?>
 				</div>
 				<?php
 						$HIDE_NOT_AVAILABLE='N';
-						if($_COOKIE["hide_not_available"]=="Y"){
+						if(isset($_GET["hide_not_available"])){
 							$HIDE_NOT_AVAILABLE='Y';
 						}
 				 ?>
@@ -370,12 +370,12 @@ if ($isFilter || $isSidebar): ?>
 						});
  							$("#catalog_available").change(function(e){
  								if($(this).is(":checked")){
- 										// window.location.href = '?HIDE_NOT_AVAILABLE=Y';
- 										$.cookie("hide_not_available","Y");
+ 										window.location.href = '?hide_not_available';
+
  								} else {
- 										$.cookie("hide_not_available","N");
+                                    window.location.href = window.location.href.replace("hide_not_available","");
  								}
- 								location.reload();
+
  							});
 					});
 				</script>

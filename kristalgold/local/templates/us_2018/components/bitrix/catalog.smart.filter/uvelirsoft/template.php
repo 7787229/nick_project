@@ -722,6 +722,7 @@ if (isset($templateData['TEMPLATE_THEME']))
                                         if (countContextElements==0) return false;
 
                                         newElement.addClass(newClassElement).addClass("newFilter").css("display","block");
+                                        $(newElement).find('.bx-filter-param-label').removeClass('disabled');
 
                                         if(filter_url.search("-is-"+filterUrl)!==-1  || filter_url.search("-or-"+filterUrl)!==-1 ){
 
