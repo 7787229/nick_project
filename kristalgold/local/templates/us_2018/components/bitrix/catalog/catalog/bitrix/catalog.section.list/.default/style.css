@@ -314,3 +314,26 @@
 .subcategories{
 	margin: 0 -15px 35px -15px !important;
 }
+.subcategories span.name-cat {
+
+
+	padding: 7px 0px !important;
+	display: none;
+	color: white;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 5px;
+	font-weight: 600;
+	font-size: 14px;
+
+	width: 200px;
+	background-color: #459e80;
+}
+@media (max-width: 768px) {
+	.subcategories img{
+		display: none;
+	}
+	.subcategories span.name-cat{
+		display: block;
+	}
+}

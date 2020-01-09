@@ -306,59 +306,70 @@ if ($isFilter || $isSidebar): ?>
         let braslety=[
             {
                 url: "/magazin/catalog/braslety/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые браслеты.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые браслеты.jpg",
+                name : 'Золотые браслеты'
             },
             {
                 url:"/magazin/catalog/braslety/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебряные браслеты.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебряные браслеты.jpg",
+                name : 'Серебряные браслеты'
             }
         ];
 
         let broshi=[
             {
                 url: "/magazin/catalog/broshi/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые броши.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые броши.jpg",
+                name : 'Золотые броши'
             },
             {
                 url:"https://www.kristallgold.ru/magazin/catalog/broshi/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебряные броши1.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебряные броши1.jpg",
+                name : 'Серебряные броши'
             }
         ];
 
         let kole=[
             {
                 url: "/magazin/catalog/kole/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые колье.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые колье.jpg",
+                name : 'Золотые колье'
             },
             {
                 url:"/magazin/catalog/kole/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебряные колье колье.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебряные колье колье.jpg",
+                name : 'Серебряные колье'
             }
         ];
 
         let koltsa=[
             {
                 url: "/magazin/catalog/rings/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые кольца.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые кольца.jpg",
+                name : 'Золотые кольца'
             },
             {
                 url:"/magazin/catalog/rings/filter/metall-is-palladij/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/кольца из палладия.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/кольца из палладия.jpg",
+                name : 'Кольца из палладия'
             },
             {
                 url:"/magazin/catalog/rings/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебр кольца.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебр кольца.jpg",
+                name : 'Серебряные кольца'
             }
         ];
 
         let podveski=[
             {
                 url: "/magazin/catalog/pendants/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые подвески.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые подвески.jpg",
+                name : 'Золотые подвески'
             },
             {
                 url:"/magazin/catalog/pendants/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебряные подвески.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебряные подвески.jpg",
+                name : 'Серябряные подвески'
             }
 
         ];
@@ -366,15 +377,18 @@ if ($isFilter || $isSidebar): ?>
         let sergi=[
             {
                 url: "/magazin/catalog/sergi/filter/metall-is-zoloto/apply/",
-                src: "https://www.kristallgold.ru/upload/banners/золотые серьги.jpg"
+                src: "https://www.kristallgold.ru/upload/banners/золотые серьги.jpg",
+                name : 'Золотые серьги'
             },
             {
                 url:"/magazin/catalog/sergi/filter/metall-is-serebro/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серебр серьги.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серебр серьги.jpg",
+                name : 'Серебряные серьги'
             },
             {
                 url:"/magazin/catalog/sergi/filter/metall-is-palladij/apply/",
-                src : "https://www.kristallgold.ru/upload/banners/серьги из палладия.jpg"
+                src : "https://www.kristallgold.ru/upload/banners/серьги из палладия.jpg",
+                name : 'Серьги из паладия'
             }
 
         ];
@@ -387,7 +401,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/braslety/" :
                     html = "";
                     for (let i=0; i<braslety.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+braslety[i].url+"'><img src='"+braslety[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+braslety[i].url+"'><span class='name-cat'>"+braslety[i].name+"</span><img src='"+braslety[i].src+"' ></a></div>"
                     }
 
                     break;
@@ -395,7 +409,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/broshi/" :
                     html = "";
                     for (let i=0; i<broshi.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+broshi[i].url+"'><img src='"+broshi[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+broshi[i].url+"'><span class='name-cat'>"+broshi[i].name+"</span><img src='"+broshi[i].src+"' ></a></div>"
                     }
 
                     break;
@@ -403,7 +417,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/kole/" :
                     html = "";
                     for (let i=0; i<kole.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+kole[i].url+"'><img src='"+kole[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+kole[i].url+"'><span class='name-cat'>"+kole[i].name+"</span><img src='"+kole[i].src+"' ></a></div>"
                     }
 
                     break;
@@ -411,7 +425,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/rings/" :
                     html = "";
                     for (let i=0; i<koltsa.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+koltsa[i].url+"'><img src='"+koltsa[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+koltsa[i].url+"'><span class='name-cat'>"+koltsa[i].name+"</span><img src='"+koltsa[i].src+"' ></a></div>"
                     }
 
                     break;
@@ -419,7 +433,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/pendants/" :
                     html = "";
                     for (let i=0; i<podveski.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+podveski[i].url+"'><img src='"+podveski[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+podveski[i].url+"'><span class='name-cat'>"+podveski[i].name+"</span><img src='"+podveski[i].src+"' ></a></div>"
                     }
 
                     break;
@@ -427,7 +441,7 @@ if ($isFilter || $isSidebar): ?>
                 case "/magazin/catalog/sergi/" :
                     html = "";
                     for (let i=0; i<sergi.length; i++){
-                        html+="<div class='col-md-4 subcategory'><a href='"+sergi[i].url+"'><img src='"+sergi[i].src+"' ></a></div>"
+                        html+="<div class='col-md-4 subcategory'><a href='"+sergi[i].url+"'><span class='name-cat'>"+sergi[i].name+"</span><img src='"+sergi[i].src+"' ></a></div>"
 
                     }
 
