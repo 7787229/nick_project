@@ -132,3 +132,15 @@ ul.cat-cat.mobile_hide li, ul.product-cat.mobile_hide li {
 	display: none !important;
 }
 
+.view_all_catalog.cat{
+	display: table;
+	margin: 23px auto;
+	padding-top: 23px;
+}
+
+.gencategory {
+	padding: 0;
+}
+
+
+

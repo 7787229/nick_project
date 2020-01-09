@@ -745,6 +745,25 @@ if (isset($templateData['TEMPLATE_THEME']))
                                         $(newElement).find("label").attr("data-role",newClassFilter);
                                     }
 
+                                    function sortBlocks( parent){
+                                            var $elements = $(document.getElementsByClassName(parent)).find(".checkbox");
+                                            var $target = $(document.getElementsByClassName(parent)).find(".bx-filter-parameters-box-container");
+
+
+                                            $elements.sort(function (a, b) {
+                                                var an = $(a).find(".bx-filter-param-text").text().replace(/\s+/g,''),
+                                                    bn = $(b).find(".bx-filter-param-text").text().replace(/\s+/g,'');
+
+                                                if (an && bn) {
+                                                    return an.toUpperCase().localeCompare(bn.toUpperCase());
+                                                }
+
+                                                return 0;
+                                            });
+
+                                            $elements.detach().appendTo($target);
+                                    }
+
                                     simpleFilter("vstavki","Изумруд","newIzumrud","newIzumrudFilter","izumrud");
                                     simpleFilter("vstavki","Фенакит","newFenakit","newFenakitFilter","fenakit");
                                     simpleFilter("vstavki","Агат","newAgat","newAgatFilter","agat");
@@ -767,6 +786,10 @@ if (isset($templateData['TEMPLATE_THEME']))
                                     simpleFilter("TIPIZDELIYA","Серьги","newserdi","newSergiFilter","sergi");
                                     simpleFilter("TIPIZDELIYA","Сотуар","newSotuar","newSotuarFilter","sotuar");
                                     simpleFilter("TIPIZDELIYA","Четки","newChetki","newChetkiFilter","chetki");
+
+                                    sortBlocks("vstavki");
+                                    sortBlocks("TIPIZDELIYA");
+
 
 
                                     $(".bx-filter-section.container-fluid").append('<div class="wr-show-allfilters"><button id="showAllFilters">Расширенный фильтр</button></div>');
@@ -812,12 +835,8 @@ if (isset($templateData['TEMPLATE_THEME']))
 
                             if($isMobile){
                                 ?>
-                                    <style>
-                                        .bx-filter-parameters-box {
-                                            border:none!important;
-                                        }
-                                    </style>
-                                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 bx-filter-parameters-box <?=($disabledFlag ? 'disabled' : '');?> bx-active">
+
+                    <div class="<?if ($arParams["FILTER_VIEW_MODE"] == "HORIZONTAL"):?>col-sm-6 col-md-4<?else:?>col-lg-12<?endif?> bx-filter-parameters-box bx-active">
                                 <?
                             }else{
                                 ?>

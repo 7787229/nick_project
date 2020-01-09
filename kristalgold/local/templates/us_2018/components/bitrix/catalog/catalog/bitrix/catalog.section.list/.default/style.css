@@ -309,3 +309,8 @@
 
 .bx_sitemap .bx_catalog_line_title,
 .bx_sitemap .bx_catalog_line_title a { transition: all 0.3s ease; }
+
+.subcategories img{width: 100%;}
+.subcategories{
+	margin: 0 -15px 35px -15px !important;
+}

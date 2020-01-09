@@ -294,7 +294,161 @@ if ($isFilter || $isSidebar): ?>
 				array("HIDE_ICONS" => "Y")
 			);
 			?>
-			<div class="sort clearfix">
+
+    <?
+    $url = $arResult["FOLDER"].$arResult['VARIABLES']['SECTION_CODE_PATH']."/";
+
+    $arr_clicable_bloks=array("/magazin/catalog/braslety/","/magazin/catalog/broshi/","/magazin/catalog/kole/","/magazin/catalog/rings/","/magazin/catalog/pendants/","/magazin/catalog/sergi/");
+    if(in_array($url,$arr_clicable_bloks)){
+
+    ?>
+    <script>
+        let braslety=[
+            {
+                url: "/magazin/catalog/braslety/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые браслеты.jpg"
+            },
+            {
+                url:"/magazin/catalog/braslety/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебряные браслеты.jpg"
+            }
+        ];
+
+        let broshi=[
+            {
+                url: "/magazin/catalog/broshi/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые броши.jpg"
+            },
+            {
+                url:"https://www.kristallgold.ru/magazin/catalog/broshi/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебряные броши1.jpg"
+            }
+        ];
+
+        let kole=[
+            {
+                url: "/magazin/catalog/kole/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые колье.jpg"
+            },
+            {
+                url:"/magazin/catalog/kole/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебряные колье колье.jpg"
+            }
+        ];
+
+        let koltsa=[
+            {
+                url: "/magazin/catalog/rings/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые кольца.jpg"
+            },
+            {
+                url:"/magazin/catalog/rings/filter/metall-is-palladij/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/кольца из палладия.jpg"
+            },
+            {
+                url:"/magazin/catalog/rings/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебр кольца.jpg"
+            }
+        ];
+
+        let podveski=[
+            {
+                url: "/magazin/catalog/pendants/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые подвески.jpg"
+            },
+            {
+                url:"/magazin/catalog/pendants/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебряные подвески.jpg"
+            }
+
+        ];
+
+        let sergi=[
+            {
+                url: "/magazin/catalog/sergi/filter/metall-is-zoloto/apply/",
+                src: "https://www.kristallgold.ru/upload/banners/золотые серьги.jpg"
+            },
+            {
+                url:"/magazin/catalog/sergi/filter/metall-is-serebro/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серебр серьги.jpg"
+            },
+            {
+                url:"/magazin/catalog/sergi/filter/metall-is-palladij/apply/",
+                src : "https://www.kristallgold.ru/upload/banners/серьги из палладия.jpg"
+            }
+
+        ];
+
+        function showsubcat(cat) {
+
+            let html = "";
+            switch (cat) {
+
+                case "/magazin/catalog/braslety/" :
+                    html = "";
+                    for (let i=0; i<braslety.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+braslety[i].url+"'><img src='"+braslety[i].src+"' ></a></div>"
+                    }
+
+                    break;
+
+                case "/magazin/catalog/broshi/" :
+                    html = "";
+                    for (let i=0; i<broshi.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+broshi[i].url+"'><img src='"+broshi[i].src+"' ></a></div>"
+                    }
+
+                    break;
+
+                case "/magazin/catalog/kole/" :
+                    html = "";
+                    for (let i=0; i<kole.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+kole[i].url+"'><img src='"+kole[i].src+"' ></a></div>"
+                    }
+
+                    break;
+
+                case "/magazin/catalog/rings/" :
+                    html = "";
+                    for (let i=0; i<koltsa.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+koltsa[i].url+"'><img src='"+koltsa[i].src+"' ></a></div>"
+                    }
+
+                    break;
+
+                case "/magazin/catalog/pendants/" :
+                    html = "";
+                    for (let i=0; i<podveski.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+podveski[i].url+"'><img src='"+podveski[i].src+"' ></a></div>"
+                    }
+
+                    break;
+
+                case "/magazin/catalog/sergi/" :
+                    html = "";
+                    for (let i=0; i<sergi.length; i++){
+                        html+="<div class='col-md-4 subcategory'><a href='"+sergi[i].url+"'><img src='"+sergi[i].src+"' ></a></div>"
+
+                    }
+
+                    break;
+
+            }
+
+            $(".subcategories").html(html);
+            $(".subcategories").show();
+
+
+        }
+        showsubcat("<?=$url?>");
+    </script>
+    <div style="display: none" class="subcategories col-md-12 row">
+
+    </div>
+
+    <?}?>
+			<div class="clearfix"></div>
+            <div class="sort clearfix">
 			<?
 				/***SORT***/
 				// массив значений для выбора сортировки
