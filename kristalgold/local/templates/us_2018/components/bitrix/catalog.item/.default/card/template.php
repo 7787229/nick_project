@@ -167,7 +167,7 @@ use \Bitrix\Main\Localization\Loc;
 							</span>&nbsp;
 							<?
 						}*/
-						if ($arParams['ACTIONS'] && !empty($item["PROPERTIES"]["MIN_ACTION_NAME"]["VALUE"]) )
+						if (/*$arParams['ACTIONS'] &&*/ !empty($item["PROPERTIES"]["MIN_ACTION_NAME"]["VALUE"]) )
 						{
 							?>
 							<span class="product-item-price-old" id="<?=$itemIds['PRICE_OLD']?>">
