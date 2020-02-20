@@ -679,3 +679,23 @@ else
 	}
 }
 ?>
+<script>
+  $(function(){
+      BX.Sale.OrderAjaxComponent.editActiveBasketBlock(true);
+      BX.Sale.OrderAjaxComponent.editPropsBlock(true);
+      BX.Sale.OrderAjaxComponent.editActiveRegionBlock(true);
+      BX.Sale.OrderAjaxComponent.editDeliveryBlock(true);
+      BX.Sale.OrderAjaxComponent.editPaySystemBlock(true);
+
+      $('body').click(function () {
+          setTimeout(function () {
+              BX.Sale.OrderAjaxComponent.editActiveBasketBlock(true);
+              BX.Sale.OrderAjaxComponent.editPropsBlock(true);
+              BX.Sale.OrderAjaxComponent.editActiveRegionBlock(true);
+              BX.Sale.OrderAjaxComponent.editDeliveryBlock(true);
+              BX.Sale.OrderAjaxComponent.editPaySystemBlock(true);
+          },1000);
+
+      })
+  });
+</script>

@@ -2199,17 +2199,17 @@ BX.namespace('BX.Sale.OrderAjaxComponent');
 				);
 			}
 
-			node.appendChild(
-				BX.create('DIV', {
-					props: {className: 'row bx-soa-more'},
-					children: [
-						BX.create('DIV', {
-							props: {className: 'bx-soa-more-btn col-xs-12'},
-							children: buttons
-						})
-					]
-				})
-			);
+			// node.appendChild(
+			// 	BX.create('DIV', {
+			// 		props: {className: 'row bx-soa-more'},
+			// 		children: [
+			// 			BX.create('DIV', {
+			// 				props: {className: 'bx-soa-more-btn col-xs-12'},
+			// 				children: buttons
+			// 			})
+			// 		]
+			// 	})
+			// );
 		},
 
 		getNewContainer: function(notFluid)
